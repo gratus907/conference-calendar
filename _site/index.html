@@ -1,0 +1,676 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Conference Deadlines</title>
+<meta name="description" content="Countdowns to top conferences I am interested in">
+<meta name="author" content="Originally by Abhishek Das">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1660138569" media="screen,projection">
+
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1660138569" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1660138569" media="screen,projection">
+
+<link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
+
+<script type="text/javascript" src="/conference-calendar/static/js/js-year-calendar.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/popper.min.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/moment.min.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/moment-timezone-with-data.min.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/store.min.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/ouical.min.js"></script>
+<script type="text/javascript" src="/conference-calendar/static/js/bootstrap-multiselect.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+      <div style="vertical-align: middle;">
+        <div>
+          <a class="navbar-brand" href="/conference-calendar/" style="border-bottom: none; line-height: 0.1em;">
+          Confernence Deadlines<br><br>
+          </a>
+        </div>
+      </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler"
+      aria-controls="navbars-toggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <ul class="navbar-nav mr-auto">
+        <li>
+          <a href="/conference-calendar/" class="nav-link" style="border-bottom: none">Countdowns</a>
+        </li>
+        <li>
+          <a href="/conference-calendar/calendar" class="nav-link" style="border-bottom: none;">Calendar</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-12 col-sm-12">
+                  <h1>
+                    Conference Deadlines 
+                  </h1>
+                </div>
+                <div class="meta col-12">
+                  Countdowns to top conferences I am interested in.
+                </div>
+            </div>
+            <br>
+            <div class="row">
+              <form class="container">
+                <div class="row justify-content-center">
+                  <div class="row align-items-md-center col-12 col-10-md">
+                    <div class="col-12 col-md-5 filter-label">
+                      <label for="subject-select" class="align-center" style="margin-bottom: 0px; line-height: 1.5;">
+                        Subject Filter:
+                      </label>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <select
+                        id="subject-select"
+                        name="subject-select"
+                        multiple="multiple"
+                        style="display: none"
+                      >
+                        
+                        <option value="ML" id="ML-checkbox">
+                          Machine Learning (ML)
+                        </option>
+                        
+                        <option value="TCS" id="TCS-checkbox">
+                          Theory and Algorithmics (TCS)
+                        </option>
+                        
+                        <option value="DM" id="DM-checkbox">
+                          Data Mining (DM)
+                        </option>
+                        
+                        <option value="DB" id="DB-checkbox">
+                          Database / Big Data (DB)
+                        </option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="row">
+              <div class="meta col-12">
+                <span class="local-timezone-hide">
+                  Deadlines are shown in <span class="local-timezone">America/New_York</span> time.
+                  To view them in conference website timezones, click on them.
+                </span>
+              </div>
+            </div>
+        </div>
+        <div id="confs">
+        <div id="coming_confs">
+          
+          <div id="ICDE23-C" class="ConfItem  DB-conf ">
+            <div class="row conf-row">
+                <div class="col-6">
+                  <span class="conf-title">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=ICDE23-C">ICDE Round C 2023</a>
+                  </span>
+                  <span class="conf-title-small">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=ICDE23-C">ICDE Round C '23</a>
+                  </span>
+                  <span class="conf-title-icon">
+                    <a title="Conference Website" href="https://icde2023.ics.uci.edu/" target="_blank"><img src="/conference-calendar/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website" /></a>
+                    &ZeroWidthSpace;
+                    
+                    &ZeroWidthSpace;
+                  </span>
+                </div>
+                <div class="col-6">
+                  <span class="timer"></span>
+                  <span class="timer-small"></span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="meta">
+                  <span class="conf-date">April 03-07, 2023.</span>
+                  <span class="conf-place">
+                    
+                    <a href="http://maps.google.com/?q=Anaheim, California, USA">Anaheim, California, USA</a>.
+                    
+                  </span>
+                </div>
+                
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                
+                <span title="Click to only show DB conferences" data-sub="DB" class="conf-sub DB-tag"></span>
+                
+                
+                <span title="CORE Rating" class="conf-core">CORE: A*</span>
+                
+                
+                <span title="BK21 Rating" class="conf-bk21">BK21: 3</span>
+                
+              </div>
+            </div>
+            <hr>
+          </div>
+          
+          <div id="SIGMOD23" class="ConfItem  DB-conf ">
+            <div class="row conf-row">
+                <div class="col-6">
+                  <span class="conf-title">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=SIGMOD23">SIGMOD 2023</a>
+                  </span>
+                  <span class="conf-title-small">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=SIGMOD23">SIGMOD '23</a>
+                  </span>
+                  <span class="conf-title-icon">
+                    <a title="Conference Website" href="http://2023.sigmod.org/" target="_blank"><img src="/conference-calendar/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website" /></a>
+                    &ZeroWidthSpace;
+                    
+                    &ZeroWidthSpace;
+                  </span>
+                </div>
+                <div class="col-6">
+                  <span class="timer"></span>
+                  <span class="timer-small"></span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="meta">
+                  <span class="conf-date">June 18-23, 2023.</span>
+                  <span class="conf-place">
+                    
+                    <a href="http://maps.google.com/?q=Seattle, Washington, USA">Seattle, Washington, USA</a>.
+                    
+                  </span>
+                </div>
+                
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                
+                <span title="Click to only show DB conferences" data-sub="DB" class="conf-sub DB-tag"></span>
+                
+                
+                <span title="CORE Rating" class="conf-core">CORE: A*</span>
+                
+                
+                <span title="BK21 Rating" class="conf-bk21">BK21: 4</span>
+                
+              </div>
+            </div>
+            <hr>
+          </div>
+          
+          <div id="WWW23" class="ConfItem  DM-conf ">
+            <div class="row conf-row">
+                <div class="col-6">
+                  <span class="conf-title">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=WWW23">TheWebConf 2023</a>
+                  </span>
+                  <span class="conf-title-small">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=WWW23">TheWebConf '23</a>
+                  </span>
+                  <span class="conf-title-icon">
+                    <a title="Conference Website" href="https://www2023.thewebconf.org/" target="_blank"><img src="/conference-calendar/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website" /></a>
+                    &ZeroWidthSpace;
+                    
+                    &ZeroWidthSpace;
+                  </span>
+                </div>
+                <div class="col-6">
+                  <span class="timer"></span>
+                  <span class="timer-small"></span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="meta">
+                  <span class="conf-date">May 01-05, 2023.</span>
+                  <span class="conf-place">
+                    
+                    <a href="http://maps.google.com/?q=Austin, Texas, USA">Austin, Texas, USA</a>.
+                    
+                  </span>
+                </div>
+                
+                  <div class="note">
+                      <b>Note: </b>Abstract submission due October 6th
+                  </div>
+                
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                
+                <span title="Click to only show DM conferences" data-sub="DM" class="conf-sub DM-tag"></span>
+                
+                
+                <span title="CORE Rating" class="conf-core">CORE: A*</span>
+                
+                
+                <span title="BK21 Rating" class="conf-bk21">BK21: 4</span>
+                
+              </div>
+            </div>
+            <hr>
+          </div>
+          
+        </div>
+        <div id="past_confs">
+          <h1 id="past-events-title">Past Events</h1>
+          <div id="sort-order-checkbox">
+                <label for="sort-order"><input type="checkbox" id="sort-order" name="sort-order" checked>Most recent first</label>
+            </div>
+        </div>
+      </div>
+      <footer>
+            <div class="row">
+  <div class="col-12 col-sm-12">
+    Forked from AI deadlines by Abhishek Das and PaperswithCode.
+  </div>
+</div>
+
+      </footer>
+      <br><br>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+    $(function() {
+        // Make sure this is >= no. of subs
+        // Currently not used
+        var colors = ['#341f97', '#ee5253', '#2e86de',
+                      '#ff9f43', '#10ac84', '#222f3e']
+
+        
+        
+var subs = [];
+var _all_subs = [];
+// Get all subs
+var conf_type_data = [{"name":"Machine Learning","sub":"ML","color":"#ffd300"},{"name":"Theory and Algorithmics","sub":"TCS","color":"#deff0a"},{"name":"Data Mining","sub":"DM","color":"#0aefff"},{"name":"Database / Big Data","sub":"DB","color":"#147df5"}];
+var sub2name = {}; var name2sub = {};
+for (var i = 0; i < conf_type_data.length; i++) {
+    _all_subs[i] = conf_type_data[i]['sub'];
+    sub2name[conf_type_data[i]['sub']] = conf_type_data[i]['name'];
+    name2sub[conf_type_data[i]['name']] = conf_type_data[i]['sub'];
+}
+const all_subs = _all_subs;
+
+
+        // Borrowed from https://github.com/moment/moment-timezone/issues/167
+// Adds support for time zones 'UTC-12'..'UTC+12'
+function addUtcTimeZones() {
+  // Moment.js uses the IANA timezone database, which supports generic time zones like 'Etc/GMT+1'.
+  // However, the signs for these time zones are inverted compared to ISO 8601.
+  // For more details, see https://github.com/moment/moment-timezone/issues/167
+  for (let offset = -12; offset <= 12; offset++) {
+    const posixSign = offset <= 0 ? "+" : "-";
+    const isoSign = offset >= 0 ? "+" : "-";
+    const link = `Etc/GMT${posixSign}${Math.abs(
+      offset
+    )}|UTC${isoSign}${Math.abs(offset)}`;
+    moment.tz.link(link);
+  }
+}
+
+function update_filtering(data) {
+  var page_url = "/conference-calendar";
+  store.set("gratus907.github.io-subs", data.subs);
+
+  $(".confItem").hide();
+  for (const j in data.all_subs) {
+    const s = data.all_subs[j];
+    const identifier = "." + s + "-conf";
+    if (data.subs.includes(s)) {
+      $(identifier).show();
+    }
+  }
+
+  if (subs.length == 0) {
+    window.history.pushState("", "", page_url);
+  } else {
+    window.history.pushState("", "", page_url + "/?sub=" + data.subs.join());
+  }
+}
+
+function createCalendarFromObject(data) {
+  return createCalendar({
+    options: {
+      class: "calendar-obj",
+
+      // You can pass an ID. If you don't, one will be generated for you
+      id: data.id,
+    },
+    data: {
+      // Event title
+      title: data.title,
+
+      // Event start date
+      start: data.date,
+
+      // Event duration
+      duration: 60,
+    },
+  });
+}
+
+        // Multi-select handler
+$("#subject-select").multiselect({
+  includeSelectAllOption: true,
+  numberDisplayed: 5,
+  onChange: function (option, checked, select) {
+    var csub = $(option).val();
+    if (checked == true) {
+      if (subs.indexOf(csub) < 0) subs.push(csub);
+    } else {
+      var idx = subs.indexOf(csub);
+      if (idx >= 0) subs.splice(idx, 1);
+      // In case a conf with multiple types (including this type) is wrongly hid, show all confs with at least one checked type.
+      for (var i = 0; i < subs.length; i++) {
+        // $('.' + subs[i] + '-conf').show();
+      }
+    }
+    update_filtering({ subs: subs, all_subs: all_subs });
+  },
+  onSelectAll: function (options) {
+    subs = all_subs;
+    update_filtering({ subs: subs, all_subs: all_subs });
+  },
+  onDeselectAll: function (options) {
+    subs = [];
+    update_filtering({ subs: subs, all_subs: all_subs });
+  },
+  buttonText: function (options, select) {
+    if (options.length === 0) {
+      return "None selected";
+    } else {
+      var labels = [];
+      options.each(function () {
+        if ($(this).attr("value") !== undefined) {
+          labels.push($(this).attr("value"));
+        } else {
+          labels.push($(this).html());
+        }
+      });
+      return labels.join(", ") + "";
+    }
+  },
+  buttonTitle: function (options, select) {
+    return "";
+  },
+});
+
+
+        addUtcTimeZones();
+
+        try {
+          var local_timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+          $('.local-timezone').text(local_timezone.toString());
+        }
+        catch(err) {
+          $('.local-timezone-hide').hide();
+        }
+
+        
+        
+        $('#ICDE23-C .DB-tag').html(sub2name["DB"].toLocaleLowerCase());
+        
+        
+          // adjust date according to deadline timezone
+          var timezone = "UTC-8" ;
+          var confDate = moment.tz("2022-10-08 23:59:59", timezone);
+
+          // render countdown timer
+          $('#ICDE23-C .timer').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+
+          // render countdown timer small
+          $('#ICDE23-C .timer-small').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%Dd %H:%M:%S'));
+          });
+
+          // convert deadline to local timezone
+          try {
+            var localConfDate = moment.tz(confDate, local_timezone);
+            $('#ICDE23-C .deadline-time').html(localConfDate.toString());
+          }
+          catch(err) {
+            console.log("Error converting to local timezone.");
+          }
+
+          // add calendar button
+          var myCalendar = createCalendarFromObject({
+            id:  'ICDE23-C',
+            title: 'ICDE Round C 2023 deadline',
+            date: confDate.toDate(),
+            duration: 60,
+          })
+          document.querySelector('#ICDE23-C .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          diff = today.diff(confDate);
+
+          $('#ICDE23-C').attr("diff", diff)
+          if (diff > 0) {
+            $('#ICDE23-C').addClass('past');
+            $('#ICDE23-C').appendTo($("#past_confs"))
+            $('#ICDE23-C .timer').replaceWith($('#ICDE23-C .deadline'));
+            $('#ICDE23-C .timer-small').replaceWith($('#ICDE23-C .deadline'));
+            $('#ICDE23-C .calendar').remove();
+          }
+        
+        
+        
+        $('#SIGMOD23 .DB-tag').html(sub2name["DB"].toLocaleLowerCase());
+        
+        
+          // adjust date according to deadline timezone
+          var timezone = "UTC-8" ;
+          var confDate = moment.tz("2022-10-15 23:59:59", timezone);
+
+          // render countdown timer
+          $('#SIGMOD23 .timer').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+
+          // render countdown timer small
+          $('#SIGMOD23 .timer-small').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%Dd %H:%M:%S'));
+          });
+
+          // convert deadline to local timezone
+          try {
+            var localConfDate = moment.tz(confDate, local_timezone);
+            $('#SIGMOD23 .deadline-time').html(localConfDate.toString());
+          }
+          catch(err) {
+            console.log("Error converting to local timezone.");
+          }
+
+          // add calendar button
+          var myCalendar = createCalendarFromObject({
+            id:  'SIGMOD23',
+            title: 'SIGMOD 2023 deadline',
+            date: confDate.toDate(),
+            duration: 60,
+          })
+          document.querySelector('#SIGMOD23 .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          diff = today.diff(confDate);
+
+          $('#SIGMOD23').attr("diff", diff)
+          if (diff > 0) {
+            $('#SIGMOD23').addClass('past');
+            $('#SIGMOD23').appendTo($("#past_confs"))
+            $('#SIGMOD23 .timer').replaceWith($('#SIGMOD23 .deadline'));
+            $('#SIGMOD23 .timer-small').replaceWith($('#SIGMOD23 .deadline'));
+            $('#SIGMOD23 .calendar').remove();
+          }
+        
+        
+        
+        $('#WWW23 .DM-tag').html(sub2name["DM"].toLocaleLowerCase());
+        
+        
+          // adjust date according to deadline timezone
+          var timezone = "UTC-12" ;
+          var confDate = moment.tz("2022-10-13 23:59:59", timezone);
+
+          // render countdown timer
+          $('#WWW23 .timer').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+
+          // render countdown timer small
+          $('#WWW23 .timer-small').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%Dd %H:%M:%S'));
+          });
+
+          // convert deadline to local timezone
+          try {
+            var localConfDate = moment.tz(confDate, local_timezone);
+            $('#WWW23 .deadline-time').html(localConfDate.toString());
+          }
+          catch(err) {
+            console.log("Error converting to local timezone.");
+          }
+
+          // add calendar button
+          var myCalendar = createCalendarFromObject({
+            id:  'WWW23',
+            title: 'TheWebConf 2023 deadline',
+            date: confDate.toDate(),
+            duration: 60,
+          })
+          document.querySelector('#WWW23 .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          diff = today.diff(confDate);
+
+          $('#WWW23').attr("diff", diff)
+          if (diff > 0) {
+            $('#WWW23').addClass('past');
+            $('#WWW23').appendTo($("#past_confs"))
+            $('#WWW23 .timer').replaceWith($('#WWW23 .deadline'));
+            $('#WWW23 .timer-small').replaceWith($('#WWW23 .deadline'));
+            $('#WWW23 .calendar').remove();
+          }
+        
+        
+
+        // Sort coming_confs and past_confs
+        $("#coming_confs .ConfItem").sort(function (a, b) {
+          return $(b).attr('diff') - $(a).attr('diff');
+        }).appendTo($("#coming_confs"));
+
+        $("#sort-order-checkbox input").on("click", function() {
+          if ($("#sort-order-checkbox input").is(":checked")) {
+            $("#past_confs .ConfItem").sort(function (a, b) {
+              return $(a).attr('diff') - $(b).attr('diff');
+            }).appendTo($("#past_confs"));
+          } else {
+            $("#past_confs .ConfItem").sort(function (a, b) {
+              return $(b).attr('diff') - $(a).attr('diff');
+            }).appendTo($("#past_confs"));
+          }
+        });
+
+        // Get subjects from URL/Cache
+var url = new URL(window.location);
+subs = url.searchParams.get("sub");
+if (subs == undefined) {
+  subs = store.get("gratus907.github.io-subs");
+} else {
+  subs = subs.toUpperCase().split(",");
+}
+
+// Apply selections
+if (subs == undefined) {
+  subs = all_subs;
+}
+$("#subject-select").multiselect("select", subs);
+update_filtering({ subs: subs, all_subs: all_subs });
+
+
+        // Event handler on sub badge click
+        $('.conf-sub').click(function (e) {
+            var csub = $(this).data('sub');
+            subs = [csub];
+            $("#subject-select").multiselect('deselect', all_subs);
+            $("#subject-select").multiselect('select', subs);
+            update_filtering({ subs: subs, all_subs: all_subs});
+        });
+
+    });
+    (function (i, s, o, g, r, a, m) {
+  i["GoogleAnalyticsObject"] = r;
+  (i[r] =
+    i[r] ||
+    function () {
+      (i[r].q = i[r].q || []).push(arguments);
+    }),
+    (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(
+  window,
+  document,
+  "script",
+  "https://www.google-analytics.com/analytics.js",
+  "ga"
+);
+ga("create", "", "auto");
+ga("send", "pageview");
+
+    </script>
+  </body>
+</html>

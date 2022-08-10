@@ -1,0 +1,13 @@
+---
+- name: Machine Learning
+  sub: ML
+  color: "#ffd300"
+- name: Theory and Algorithmics
+  sub: TCS
+  color: "#deff0a"
+- name: Data Mining
+  sub: DM
+  color: "#0aefff"
+- name: Database / Big Data
+  sub: DB
+  color: "#147df5"

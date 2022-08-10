@@ -1,0 +1,15 @@
+title: Conference Deadlines
+description: Countdowns to top conferences I am interested in
+author: Originally by Abhishek Das
+
+domain: "gratus907.github.io"
+baseurl: "/conference-calendar"
+
+twitter_hashtag: machinelearning
+github_username: gratus907
+github_repo: 
+
+markdown: kramdown
+ga_id:
+
+include: ['_pages']

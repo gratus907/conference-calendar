@@ -1,0 +1,46 @@
+---
+
+- title: ICDE Round C
+  year: 2023
+  id: ICDE23-C
+  link: https://icde2023.ics.uci.edu/
+  deadline: '2022-10-08 23:59:59'
+  timezone: UTC-8
+  place: Anaheim, California, USA
+  date: April 03-07, 2023
+  start: 2023-04-03
+  end: 2023-04-07
+  CORE: A*
+  BK21: 3
+  sub: DB
+
+- title: SIGMOD
+  year: 2023
+  id: SIGMOD23
+  link: http://2023.sigmod.org/
+  deadline: '2022-10-15 23:59:59'
+  timezone: UTC-8
+  place: Seattle, Washington, USA
+  date: June 18-23, 2023
+  start: 2023-06-18
+  end: 2023-06-23
+  CORE: A*
+  BK21: 4
+  sub: DB
+  hindex: 100
+  
+- title: TheWebConf
+  year: 2023
+  id: WWW23
+  link: https://www2023.thewebconf.org/
+  deadline: '2022-10-13 23:59:59'
+  abstract_deadline: '2022-10-06 23:59:59'
+  timezone: UTC-12
+  place: Austin, Texas, USA
+  date: May 01-05, 2023
+  start: 2023-05-01
+  end: 2023-05-05
+  CORE: A*
+  BK21: 4
+  sub: DM
+  note: Abstract submission due October 6th
