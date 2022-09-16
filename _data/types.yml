@@ -2,8 +2,8 @@
 - name: Machine Learning
   sub: ML
   color: "#ffd300"
-- name: Theory and Algorithmics
-  sub: TCS
+- name: Algorithms
+  sub: AL
   color: "#deff0a"
 - name: Data Mining
   sub: DM

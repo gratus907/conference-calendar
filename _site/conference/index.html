@@ -7,11 +7,11 @@
 <title>Conference Deadlines</title>
 <meta name="description" content="Countdowns to top conferences I am interested in">
 <meta name="author" content="Originally by Abhishek Das">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1660138941" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1661004357" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1660138941" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1660138941" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1661004357" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1661004357" media="screen,projection">
 
 <link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
 
@@ -140,7 +140,7 @@
 var subs = [];
 var _all_subs = [];
 // Get all subs
-var conf_type_data = [{"name":"Machine Learning","sub":"ML","color":"#ffd300"},{"name":"Theory and Algorithmics","sub":"TCS","color":"#deff0a"},{"name":"Data Mining","sub":"DM","color":"#0aefff"},{"name":"Database / Big Data","sub":"DB","color":"#147df5"}];
+var conf_type_data = [{"name":"Machine Learning","sub":"ML","color":"#ffd300"},{"name":"Algorithms","sub":"AL","color":"#deff0a"},{"name":"Data Mining","sub":"DM","color":"#0aefff"},{"name":"Database / Big Data","sub":"DB","color":"#147df5"}];
 var sub2name = {}; var name2sub = {};
 for (var i = 0; i < conf_type_data.length; i++) {
     _all_subs[i] = conf_type_data[i]['sub'];
@@ -168,7 +168,7 @@ function addUtcTimeZones() {
 
 function update_filtering(data) {
   var page_url = "/conference-calendar";
-  store.set("gratus907.github.io-subs", data.subs);
+  store.set("https://gratus907.github.io-subs", data.subs);
 
   $(".confItem").hide();
   for (const j in data.all_subs) {
@@ -373,6 +373,65 @@ function createCalendarFromObject(data) {
                 var conferenceDeadlineCalendar = createCalendarFromObject({
                   id:  'WWW23',
                   title: 'TheWebConf 2023 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
+        
+            if (conf == "WALCOM23") {
+
+              $('#conf-title-href').text("WALCOM 2023");
+              $('#conf-title-href').attr('href', "/conference?id=WALCOM23");
+              // set badges
+              var subs = 'AL'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("March 22-24, 2023");
+              $('#conf-place').text("Hsinchu, Taiwan");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Hsinchu, Taiwan")
+              $('#conf-website').text("https://www.walcom2023.conf.nycu.edu.tw/home");
+              $('#conf-website').attr('href', "https://www.walcom2023.conf.nycu.edu.tw/home");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #WALCOM2023 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2022-09-17 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'WALCOM23',
+                  title: 'WALCOM 2023 deadline',
                   date: confDeadline.toDate(),
                   duration: 60,
                 })

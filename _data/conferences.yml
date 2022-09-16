@@ -1,4 +1,17 @@
 ---
+- title: ICLR
+  year: 2023
+  id: ICLR
+  link: https://iclr.cc
+  deadline: '2022-09-28 23:59:59'
+  timezone: UTC-12
+  place: Kigali, Rwanda
+  date: May 01-05, 2023
+  start: 2023-05-01
+  end: 2023-05-05
+  CORE: A*
+  BK21: 4
+  sub: ML
 
 - title: ICDE Round C
   year: 2023
@@ -44,3 +57,16 @@
   BK21: 4
   sub: DM
   note: Abstract submission due October 6th
+
+- title: WALCOM
+  year: 2023
+  id: WALCOM23
+  link: https://www.walcom2023.conf.nycu.edu.tw/home
+  deadline: '2022-09-17 23:59:59'
+  timezone: UTC-12
+  place: Hsinchu, Taiwan
+  date: March 22-24, 2023
+  start: 2023-03-22
+  end: 2023-03-24
+  CORE: B
+  sub: AL

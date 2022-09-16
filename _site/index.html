@@ -7,11 +7,11 @@
 <title>Conference Deadlines</title>
 <meta name="description" content="Countdowns to top conferences I am interested in">
 <meta name="author" content="Originally by Abhishek Das">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1660138941" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1661004357" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1660138941" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1660138941" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1661004357" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1661004357" media="screen,projection">
 
 <link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
 
@@ -88,8 +88,8 @@
                           Machine Learning (ML)
                         </option>
                         
-                        <option value="TCS" id="TCS-checkbox">
-                          Theory and Algorithmics (TCS)
+                        <option value="AL" id="AL-checkbox">
+                          Algorithms (AL)
                         </option>
                         
                         <option value="DM" id="DM-checkbox">
@@ -299,6 +299,63 @@
             <hr>
           </div>
           
+          <div id="WALCOM23" class="ConfItem  AL-conf ">
+            <div class="row conf-row">
+                <div class="col-6">
+                  <span class="conf-title">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=WALCOM23">WALCOM 2023</a>
+                  </span>
+                  <span class="conf-title-small">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=WALCOM23">WALCOM '23</a>
+                  </span>
+                  <span class="conf-title-icon">
+                    <a title="Conference Website" href="https://www.walcom2023.conf.nycu.edu.tw/home" target="_blank"><img src="/conference-calendar/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website" /></a>
+                    &ZeroWidthSpace;
+                    
+                    &ZeroWidthSpace;
+                  </span>
+                </div>
+                <div class="col-6">
+                  <span class="timer"></span>
+                  <span class="timer-small"></span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="meta">
+                  <span class="conf-date">March 22-24, 2023.</span>
+                  <span class="conf-place">
+                    
+                    <a href="http://maps.google.com/?q=Hsinchu, Taiwan">Hsinchu, Taiwan</a>.
+                    
+                  </span>
+                </div>
+                
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                
+                <span title="Click to only show AL conferences" data-sub="AL" class="conf-sub AL-tag"></span>
+                
+                
+                <span title="CORE Rating" class="conf-core">CORE: B</span>
+                
+                
+              </div>
+            </div>
+            <hr>
+          </div>
+          
         </div>
         <div id="past_confs">
           <h1 id="past-events-title">Past Events</h1>
@@ -329,7 +386,7 @@
 var subs = [];
 var _all_subs = [];
 // Get all subs
-var conf_type_data = [{"name":"Machine Learning","sub":"ML","color":"#ffd300"},{"name":"Theory and Algorithmics","sub":"TCS","color":"#deff0a"},{"name":"Data Mining","sub":"DM","color":"#0aefff"},{"name":"Database / Big Data","sub":"DB","color":"#147df5"}];
+var conf_type_data = [{"name":"Machine Learning","sub":"ML","color":"#ffd300"},{"name":"Algorithms","sub":"AL","color":"#deff0a"},{"name":"Data Mining","sub":"DM","color":"#0aefff"},{"name":"Database / Big Data","sub":"DB","color":"#147df5"}];
 var sub2name = {}; var name2sub = {};
 for (var i = 0; i < conf_type_data.length; i++) {
     _all_subs[i] = conf_type_data[i]['sub'];
@@ -357,7 +414,7 @@ function addUtcTimeZones() {
 
 function update_filtering(data) {
   var page_url = "/conference-calendar";
-  store.set("gratus907.github.io-subs", data.subs);
+  store.set("https://gratus907.github.io-subs", data.subs);
 
   $(".confItem").hide();
   for (const j in data.all_subs) {
@@ -604,6 +661,56 @@ $("#subject-select").multiselect({
           }
         
         
+        
+        $('#WALCOM23 .AL-tag').html(sub2name["AL"].toLocaleLowerCase());
+        
+        
+          // adjust date according to deadline timezone
+          var timezone = "UTC-12" ;
+          var confDate = moment.tz("2022-09-17 23:59:59", timezone);
+
+          // render countdown timer
+          $('#WALCOM23 .timer').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+
+          // render countdown timer small
+          $('#WALCOM23 .timer-small').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%Dd %H:%M:%S'));
+          });
+
+          // convert deadline to local timezone
+          try {
+            var localConfDate = moment.tz(confDate, local_timezone);
+            $('#WALCOM23 .deadline-time').html(localConfDate.toString());
+          }
+          catch(err) {
+            console.log("Error converting to local timezone.");
+          }
+
+          // add calendar button
+          var myCalendar = createCalendarFromObject({
+            id:  'WALCOM23',
+            title: 'WALCOM 2023 deadline',
+            date: confDate.toDate(),
+            duration: 60,
+          })
+          document.querySelector('#WALCOM23 .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          diff = today.diff(confDate);
+
+          $('#WALCOM23').attr("diff", diff)
+          if (diff > 0) {
+            $('#WALCOM23').addClass('past');
+            $('#WALCOM23').appendTo($("#past_confs"))
+            $('#WALCOM23 .timer').replaceWith($('#WALCOM23 .deadline'));
+            $('#WALCOM23 .timer-small').replaceWith($('#WALCOM23 .deadline'));
+            $('#WALCOM23 .calendar').remove();
+          }
+        
+        
 
         // Sort coming_confs and past_confs
         $("#coming_confs .ConfItem").sort(function (a, b) {
@@ -626,7 +733,7 @@ $("#subject-select").multiselect({
 var url = new URL(window.location);
 subs = url.searchParams.get("sub");
 if (subs == undefined) {
-  subs = store.get("gratus907.github.io-subs");
+  subs = store.get("https://gratus907.github.io-subs");
 } else {
   subs = subs.toUpperCase().split(",");
 }
