@@ -1,4 +1,19 @@
 ---
+- title: EMNLP
+  year: 2022
+  id: EMNLP
+  link: https://2022.emnlp.org/
+  deadline: '2022-07-24 23:59:59'
+  timezone: UTC-12
+  place: Abu Dhabi, United Arab Emirates
+  date: December 09-11, 2022
+  start: 2022-12-09
+  end: 2022-12-11
+  CORE: A
+  BK21: 3
+  sub: ML
+  note: Decisions will be released in Oct 06
+
 - title: ICLR
   year: 2023
   id: ICLR
@@ -12,7 +27,7 @@
   CORE: A*
   BK21: 4
   sub: ML
-  note: Abstract submission due September 21st
+  note: Reviews will be released in Nov 05, 03:00 CAT
 
 - title: ICDE Round C
   year: 2023

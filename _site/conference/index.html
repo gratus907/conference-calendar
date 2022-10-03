@@ -7,11 +7,11 @@
 <title>Conference Deadlines</title>
 <meta name="description" content="Countdowns to top conferences I am interested in">
 <meta name="author" content="Originally by Abhishek Das">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1663811869" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1664780414" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1663811869" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1663811869" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1664780414" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1664780414" media="screen,projection">
 
 <link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
 
@@ -217,6 +217,65 @@ function createCalendarFromObject(data) {
           $('.local-timezone-hide').hide();
         }
 
+        
+            if (conf == "EMNLP") {
+
+              $('#conf-title-href').text("EMNLP 2022");
+              $('#conf-title-href').attr('href', "/conference?id=EMNLP");
+              // set badges
+              var subs = 'ML'.split(',');
+              for (let i = 0; i < subs.length; i++) {
+                var sub = subs[i].replace(" ", "");
+                var sub_element = document.createElement('span');
+                sub_element.className = "conf-sub conf-" + sub;
+                sub_element.textContent = sub2name[sub];
+                $('#conf-subs').append(sub_element);
+              }
+              // other
+              $('#conf-date').text("December 09-11, 2022");
+              $('#conf-place').text("Abu Dhabi, United Arab Emirates");
+              $('#conf-place').attr('href', "https://maps.google.com/?q=Abu Dhabi, United Arab Emirates")
+              $('#conf-website').text("https://2022.emnlp.org/");
+              $('#conf-website').attr('href', "https://2022.emnlp.org/");
+              
+                $('#conf-paperslink-div').hide();
+              
+              
+                $('#conf-pwclink-div').hide();
+              
+              var twitter_slug = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="Countdown to the #EMNLP2022 deadline!" data-show-count="false" style="font-size:13px;">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8">';
+              $('#twitter-box').html(twitter_slug);
+              
+              
+                // adjust date according to deadline timezone
+                var timezone = "UTC-12" ;
+                var confDeadline = moment.tz("2022-07-24 23:59:59", timezone);
+
+                // add calendar 
+                var conferenceDeadlineCalendar = createCalendarFromObject({
+                  id:  'EMNLP',
+                  title: 'EMNLP 2022 deadline',
+                  date: confDeadline.toDate(),
+                  duration: 60,
+                })
+                document.querySelector('#conference-deadline').appendChild(conferenceDeadlineCalendar);
+
+                // render countdown timer
+                $('#conf-timer').countdown(confDeadline.toDate(), function(event) {
+                  $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+                });
+                $('.deadline-time').html(confDeadline.toString());
+
+                // convert deadline to local timezone
+                try {
+                  var localConfDeadline = moment.tz(confDeadline, local_timezone);
+                  $('.deadline-local-time').html(localConfDeadline.toString());
+                }
+                catch(err) {
+                  console.log("Error converting to local timezone.");
+                }
+              
+            }
         
             if (conf == "ICLR") {
 

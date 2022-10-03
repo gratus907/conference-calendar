@@ -7,11 +7,11 @@
 <title>Conference Deadlines</title>
 <meta name="description" content="Countdowns to top conferences I am interested in">
 <meta name="author" content="Originally by Abhishek Das">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1663811869" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1664780414" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1663811869" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1663811869" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1664780414" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1664780414" media="screen,projection">
 
 <link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
 
@@ -118,6 +118,69 @@
         <div id="confs">
         <div id="coming_confs">
           
+          <div id="EMNLP" class="ConfItem  ML-conf ">
+            <div class="row conf-row">
+                <div class="col-6">
+                  <span class="conf-title">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=EMNLP">EMNLP 2022</a>
+                  </span>
+                  <span class="conf-title-small">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=EMNLP">EMNLP '22</a>
+                  </span>
+                  <span class="conf-title-icon">
+                    <a title="Conference Website" href="https://2022.emnlp.org/" target="_blank"><img src="/conference-calendar/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website" /></a>
+                    &ZeroWidthSpace;
+                    
+                    &ZeroWidthSpace;
+                  </span>
+                </div>
+                <div class="col-6">
+                  <span class="timer"></span>
+                  <span class="timer-small"></span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="meta">
+                  <span class="conf-date">December 09-11, 2022.</span>
+                  <span class="conf-place">
+                    
+                    <a href="http://maps.google.com/?q=Abu Dhabi, United Arab Emirates">Abu Dhabi, United Arab Emirates</a>.
+                    
+                  </span>
+                </div>
+                
+                  <div class="note">
+                      <b>Note: </b>Decisions will be released in Oct 06
+                  </div>
+                
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                
+                <span title="Click to only show ML conferences" data-sub="ML" class="conf-sub ML-tag"></span>
+                
+                
+                <span title="CORE Rating" class="conf-core">CORE: A</span>
+                
+                
+                <span title="BK21 Rating" class="conf-bk21">BK21: 3</span>
+                
+              </div>
+            </div>
+            <hr>
+          </div>
+          
           <div id="ICLR" class="ConfItem  ML-conf ">
             <div class="row conf-row">
                 <div class="col-6">
@@ -151,7 +214,7 @@
                 </div>
                 
                   <div class="note">
-                      <b>Note: </b>Abstract submission due September 21st
+                      <b>Note: </b>Reviews will be released in Nov 05, 03:00 CAT
                   </div>
                 
 
@@ -479,9 +542,10 @@
         </div>
         <div id="past_confs">
           <h1 id="past-events-title">Past Events</h1>
-          <div id="sort-order-checkbox">
+            <div id="sort-order-checkbox">
                 <label for="sort-order"><input type="checkbox" id="sort-order" name="sort-order" checked>Most recent first</label>
             </div>
+          
         </div>
       </div>
       <footer>
@@ -630,6 +694,56 @@ $("#subject-select").multiselect({
           $('.local-timezone-hide').hide();
         }
 
+        
+        
+        $('#EMNLP .ML-tag').html(sub2name["ML"].toLocaleLowerCase());
+        
+        
+          // adjust date according to deadline timezone
+          var timezone = "UTC-12" ;
+          var confDate = moment.tz("2022-07-24 23:59:59", timezone);
+
+          // render countdown timer
+          $('#EMNLP .timer').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+
+          // render countdown timer small
+          $('#EMNLP .timer-small').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%Dd %H:%M:%S'));
+          });
+
+          // convert deadline to local timezone
+          try {
+            var localConfDate = moment.tz(confDate, local_timezone);
+            $('#EMNLP .deadline-time').html(localConfDate.toString());
+          }
+          catch(err) {
+            console.log("Error converting to local timezone.");
+          }
+
+          // add calendar button
+          var myCalendar = createCalendarFromObject({
+            id:  'EMNLP',
+            title: 'EMNLP 2022 deadline',
+            date: confDate.toDate(),
+            duration: 60,
+          })
+          document.querySelector('#EMNLP .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          diff = today.diff(confDate);
+
+          $('#EMNLP').attr("diff", diff)
+          if (diff > 0) {
+            $('#EMNLP').addClass('past');
+            $('#EMNLP').appendTo($("#past_confs"))
+            $('#EMNLP .timer').replaceWith($('#EMNLP .deadline'));
+            $('#EMNLP .timer-small').replaceWith($('#EMNLP .deadline'));
+            $('#EMNLP .calendar').remove();
+          }
+        
         
         
         $('#ICLR .ML-tag').html(sub2name["ML"].toLocaleLowerCase());
