@@ -8,11 +8,11 @@
 <title>Conference Deadlines</title>
 <meta name="description" content="Countdowns to top conferences I am interested in">
 <meta name="author" content="Originally by Abhishek Das">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1661004357" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1663811869" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1661004357" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1661004357" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1663811869" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1663811869" media="screen,projection">
 
 <link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
 
@@ -415,6 +415,49 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
+      id: "ICLR-deadline",
+      abbreviation: "ICLR",
+      name: "ICLR 2023",
+      color: "red",
+      location: "Kigali, Rwanda",
+      date: "May 01-05, 2023",
+      hindex: "",
+      subject: "ML",
+      startDate: Date.parse("2022-09-28 23:59:59"),
+      endDate: Date.parse("2022-09-28 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+                    color = "#ffd300";
+            
+      
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ICLR-conference",
+        abbreviation: "ICLR",
+        name: "ICLR 2023",
+        color: color,
+        location: "Kigali, Rwanda",
+        date: "May 01-05, 2023",
+        hindex: "",
+        subject: "ML",
+        startDate: Date.parse("2023-05-01"),
+        endDate: Date.parse("2023-05-05"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
       id: "ICDE23-C-deadline",
       abbreviation: "ICDE23-C",
       name: "ICDE Round C 2023",
@@ -582,6 +625,49 @@ function load_conference_list() {
         subject: "AL",
         startDate: Date.parse("2023-03-22"),
         endDate: Date.parse("2023-03-24"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "ECMLPKDD23-deadline",
+      abbreviation: "ECMLPKDD23",
+      name: "ECML-PKDD 2023",
+      color: "red",
+      location: "Turin, Italy",
+      date: "September 18-22, 2023",
+      hindex: "",
+      subject: "DM",
+      startDate: Date.parse("TBA"),
+      endDate: Date.parse("TBA"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+                    color = "#0aefff";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ECMLPKDD23-conference",
+        abbreviation: "ECMLPKDD23",
+        name: "ECML-PKDD 2023",
+        color: color,
+        location: "Turin, Italy",
+        date: "September 18-22, 2023",
+        hindex: "",
+        subject: "DM",
+        startDate: Date.parse("2023-09-18"),
+        endDate: Date.parse("2023-09-22"),
       });
     
   

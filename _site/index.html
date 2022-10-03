@@ -7,11 +7,11 @@
 <title>Conference Deadlines</title>
 <meta name="description" content="Countdowns to top conferences I am interested in">
 <meta name="author" content="Originally by Abhishek Das">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1661004357" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1663811869" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1661004357" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1661004357" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1663811869" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1663811869" media="screen,projection">
 
 <link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
 
@@ -117,6 +117,69 @@
         </div>
         <div id="confs">
         <div id="coming_confs">
+          
+          <div id="ICLR" class="ConfItem  ML-conf ">
+            <div class="row conf-row">
+                <div class="col-6">
+                  <span class="conf-title">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=ICLR">ICLR 2023</a>
+                  </span>
+                  <span class="conf-title-small">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=ICLR">ICLR '23</a>
+                  </span>
+                  <span class="conf-title-icon">
+                    <a title="Conference Website" href="https://iclr.cc" target="_blank"><img src="/conference-calendar/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website" /></a>
+                    &ZeroWidthSpace;
+                    
+                    &ZeroWidthSpace;
+                  </span>
+                </div>
+                <div class="col-6">
+                  <span class="timer"></span>
+                  <span class="timer-small"></span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="meta">
+                  <span class="conf-date">May 01-05, 2023.</span>
+                  <span class="conf-place">
+                    
+                    <a href="http://maps.google.com/?q=Kigali, Rwanda">Kigali, Rwanda</a>.
+                    
+                  </span>
+                </div>
+                
+                  <div class="note">
+                      <b>Note: </b>Abstract submission due September 21st
+                  </div>
+                
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                
+                <span title="Click to only show ML conferences" data-sub="ML" class="conf-sub ML-tag"></span>
+                
+                
+                <span title="CORE Rating" class="conf-core">CORE: A*</span>
+                
+                
+                <span title="BK21 Rating" class="conf-bk21">BK21: 4</span>
+                
+              </div>
+            </div>
+            <hr>
+          </div>
           
           <div id="ICDE23-C" class="ConfItem  DB-conf ">
             <div class="row conf-row">
@@ -356,6 +419,63 @@
             <hr>
           </div>
           
+          <div id="ECMLPKDD23" class="ConfItem  DM-conf ">
+            <div class="row conf-row">
+                <div class="col-6">
+                  <span class="conf-title">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=ECMLPKDD23">ECML-PKDD 2023</a>
+                  </span>
+                  <span class="conf-title-small">
+                      <a title="Deadline Details" href="/conference-calendar/conference?id=ECMLPKDD23">ECML-PKDD '23</a>
+                  </span>
+                  <span class="conf-title-icon">
+                    <a title="Conference Website" href="https://2023.ecmlpkdd.org/" target="_blank"><img src="/conference-calendar/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website" /></a>
+                    &ZeroWidthSpace;
+                    
+                    &ZeroWidthSpace;
+                  </span>
+                </div>
+                <div class="col-6">
+                  <span class="timer"></span>
+                  <span class="timer-small"></span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <div class="meta">
+                  <span class="conf-date">September 18-22, 2023.</span>
+                  <span class="conf-place">
+                    
+                    <a href="http://maps.google.com/?q=Turin, Italy">Turin, Italy</a>.
+                    
+                  </span>
+                </div>
+                
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                  </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                
+                <span title="Click to only show DM conferences" data-sub="DM" class="conf-sub DM-tag"></span>
+                
+                
+                <span title="CORE Rating" class="conf-core">CORE: A</span>
+                
+                
+              </div>
+            </div>
+            <hr>
+          </div>
+          
         </div>
         <div id="past_confs">
           <h1 id="past-events-title">Past Events</h1>
@@ -510,6 +630,56 @@ $("#subject-select").multiselect({
           $('.local-timezone-hide').hide();
         }
 
+        
+        
+        $('#ICLR .ML-tag').html(sub2name["ML"].toLocaleLowerCase());
+        
+        
+          // adjust date according to deadline timezone
+          var timezone = "UTC-12" ;
+          var confDate = moment.tz("2022-09-28 23:59:59", timezone);
+
+          // render countdown timer
+          $('#ICLR .timer').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+
+          // render countdown timer small
+          $('#ICLR .timer-small').countdown(confDate.toDate(), function (event) {
+              $(this).html(event.strftime('%Dd %H:%M:%S'));
+          });
+
+          // convert deadline to local timezone
+          try {
+            var localConfDate = moment.tz(confDate, local_timezone);
+            $('#ICLR .deadline-time').html(localConfDate.toString());
+          }
+          catch(err) {
+            console.log("Error converting to local timezone.");
+          }
+
+          // add calendar button
+          var myCalendar = createCalendarFromObject({
+            id:  'ICLR',
+            title: 'ICLR 2023 deadline',
+            date: confDate.toDate(),
+            duration: 60,
+          })
+          document.querySelector('#ICLR .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          diff = today.diff(confDate);
+
+          $('#ICLR').attr("diff", diff)
+          if (diff > 0) {
+            $('#ICLR').addClass('past');
+            $('#ICLR').appendTo($("#past_confs"))
+            $('#ICLR .timer').replaceWith($('#ICLR .deadline'));
+            $('#ICLR .timer-small').replaceWith($('#ICLR .deadline'));
+            $('#ICLR .calendar').remove();
+          }
+        
         
         
         $('#ICDE23-C .DB-tag').html(sub2name["DB"].toLocaleLowerCase());
@@ -709,6 +879,14 @@ $("#subject-select").multiselect({
             $('#WALCOM23 .timer-small').replaceWith($('#WALCOM23 .deadline'));
             $('#WALCOM23 .calendar').remove();
           }
+        
+        
+        
+        $('#ECMLPKDD23 .DM-tag').html(sub2name["DM"].toLocaleLowerCase());
+        
+        
+          $('#ECMLPKDD23 .timer').html("TBA");
+          $('#ECMLPKDD23 .deadline-time').html("TBA");
         
         
 

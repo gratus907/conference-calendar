@@ -71,3 +71,16 @@
   end: 2023-03-24
   CORE: B
   sub: AL
+
+- title: ECML-PKDD
+  year: 2023
+  id: ECMLPKDD23
+  link: https://2023.ecmlpkdd.org/
+  deadline: 'TBA'
+  #timezone: UTC-12
+  place: Turin, Italy
+  date: September 18-22, 2023
+  start: 2023-09-18
+  end: 2023-09-22
+  CORE: A
+  sub: DM
