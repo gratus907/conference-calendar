@@ -100,6 +100,11 @@
                       <b>Note: </b>{{conf.note}}
                   </div>
                 {% endif %}
+                {% if conf.submitted %}
+                  <div class="note">
+                    <b>Submitted : {{conf.submitted}}</b>
+                  </div>
+                {% endif %}
 
               </div>
               <div class="col-12 col-sm-6">
@@ -174,7 +179,7 @@
           // adjust date according to deadline timezone
           var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
           var confDate = moment.tz("{{conf.deadline}}", timezone);
-
+          var decisionDate = moment.tz("{{conf.decision}}", timezone);
           // render countdown timer
           $('#{{conf.id}} .timer').countdown(confDate.toDate(), function (event) {
               $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
@@ -184,6 +189,12 @@
           $('#{{conf.id}} .timer-small').countdown(confDate.toDate(), function (event) {
               $(this).html(event.strftime('%Dd %H:%M:%S'));
           });
+          
+          {% if conf.submitted %}
+            $('#{{conf.id}} .next_date').countdown(decisionDate.toDate(), function (event) {
+                $(this).html(event.strftime('%Dd %H:%M:%S'));
+            });
+          {% endif %}
 
           // convert deadline to local timezone
           try {
