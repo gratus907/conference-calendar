@@ -7,7 +7,7 @@
   deadline: '2022-05-12 23:59:59'
   timezone: UTC-12
   place: Atlanta, Georgia, USA
-  date: October 17-22, 2023
+  date: October 17-22, 2022
   start: 2022-10-17
   end: 2022-10-22
   CORE: A
@@ -21,7 +21,7 @@
   deadline: '2022-02-05 23:59:59'
   timezone: UTC-12
   place: Prague, Czech Republic
-  date: June 27-29, 2023
+  date: June 27-29, 2022
   start: 2022-06-27
   end: 2022-06-29
   CORE: B
@@ -160,7 +160,7 @@
   deadline: '2022-02-10 23:59:59'
   timezone: UTC-12
   place: Washington D.C, USA
-  date: August 14-18, 2023
+  date: August 14-18, 2022
   start: 2022-08-14
   end: 2022-08-18
   CORE: A*
@@ -189,7 +189,7 @@
   deadline: '2022-06-24 23:59:59'
   timezone: UTC-12
   place: Concepción, Chile
-  date: November 08-10, 2023
+  date: November 08-10, 2022
   start: 2022-11-08
   end: 2022-11-10
   CORE: B
