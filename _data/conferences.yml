@@ -1,30 +1,18 @@
 ---
-- title: SIGKDD
-  year: 2022
-  id: KDD22
-  link: https://www.kdd.org/kdd2022/index.html
-  deadline: '2022-02-10 23:59:59'
-  timezone: UTC-12
-  place: Washington D.C, USA
-  date: August 14-18, 2023
-  start: 2022-08-14
-  end: 2022-08-18
-  CORE: A*
-  BK21: 4
-  sub: DM
 
-- title: SPIRE
+- title: CIKM
   year: 2022
-  id: SPIRE22
-  link: http://spire2022.inf.udec.cl/
-  deadline: '2022-06-24 23:59:59'
+  id: CIKM22
+  link: https://www.cikm2022.org/
+  deadline: '2022-05-12 23:59:59'
   timezone: UTC-12
-  place: Concepción, Chile
-  date: November 08-10, 2023
-  start: 2022-11-08
-  end: 2022-11-10
-  CORE: B
-  sub: AL
+  place: Atlanta, Georgia, USA
+  date: October 17-22, 2023
+  start: 2022-10-17
+  end: 2022-10-22
+  CORE: A
+  BK21: 3
+  sub: DM
 
 - title: CPM
   year: 2022
@@ -38,6 +26,19 @@
   end: 2022-06-29
   CORE: B
   sub: AL
+
+- title: ECML-PKDD
+  year: 2023
+  id: ECMLPKDD23
+  link: https://2023.ecmlpkdd.org/
+  deadline: 'TBA'
+  #timezone: UTC-12
+  place: Turin, Italy
+  date: September 18-22, 2023
+  start: 2023-09-18
+  end: 2023-09-22
+  CORE: A
+  sub: DM
 
 - title: EMNLP
   year: 2022
@@ -55,6 +56,34 @@
   decision: '2022-10-06 23:59:59'
   note: Decisions will be released in Oct 06
 
+- title: ICDE Round C
+  year: 2023
+  id: ICDE23-C
+  link: https://icde2023.ics.uci.edu/
+  deadline: '2022-10-08 23:59:59'
+  timezone: UTC-8
+  place: Anaheim, California, USA
+  date: April 03-07, 2023
+  start: 2023-04-03
+  end: 2023-04-07
+  CORE: A*
+  BK21: 3
+  sub: DB
+
+- title: ICDM
+  year: 2022
+  id: ICDM23
+  link: https://icdm22.cse.usf.edu/
+  deadline: '2022-06-10 23:59:59'
+  timezone: UTC-7
+  place: Orlando, Florida, USA
+  date: November 28 - December 01, 2022
+  start: 2022-11-28
+  end: 2022-12-01
+  CORE: A*
+  BK21: 4
+  sub: DM
+
 - title: ICLR
   year: 2023
   id: ICLR
@@ -70,44 +99,32 @@
   sub: ML
   note: Reviews will be released in Nov 05, 03:00 CAT
 
-- title: CIKM
+- title: ISAAC
   year: 2022
-  id: CIKM22
-  link: https://www.cikm2022.org/
-  deadline: '2022-05-12 23:59:59'
+  id: ISAAC22
+  link: https://isa.hanyang.ac.kr/isaac2022/
+  deadline: '2022-06-27 23:59:59'
   timezone: UTC-12
-  place: Atlanta, Georgia, USA
-  date: October 17-22, 2023
-  start: 2022-10-17
-  end: 2022-10-22
+  place: Seoul, Republic of Korea
+  date: December 19-21, 2022
+  start: 2022-12-19
+  end: 2022-12-21
   CORE: A
-  BK21: 3
-  sub: DM
+  BK21: 1
+  sub: AL
 
-- title: SIGIR
+- title: PAKDD
   year: 2023
-  id: SIGIR23
-  link: https://sigir.org/sigir2023/
-  deadline: TBA
-  timezone: UTC-12
-  place: Taipei, Taiwan
-  date: TBA
-  CORE: A*
-  BK21: 4
-  sub: DM
-
-- title: WSDM
-  year: 2023
-  id: WSDM23
-  link: https://www.wsdm-conference.org/
-  deadline: '2022-08-12 23:59:59'
-  timezone: UTC-12
-  place: Singapore
-  date: Feburary 27 - March 03, 2023
-  start: 2023-02-27
-  end: 2023-03-03
-  CORE: A*
-  BK21: 3
+  id: PAKDD23
+  link: http://pakdd2023.org/
+  deadline: '2022-11-24 23:59:59'
+  timezone: UTC-8
+  place: Osaka, Japan
+  date: May 25-28, 2023
+  start: 2022-05-25
+  end: 2022-05-28
+  CORE: A
+  BK21: 1
   sub: DM
 
 - title: SDM
@@ -124,47 +141,31 @@
   BK21: 2
   sub: DM
 
-- title: PAKDD
-  year: 2022
-  id: PAKDD22
-  link: http://pakdd.net
-  deadline: '2021-11-15 23:59:59'
-  timezone: UTC-8
-  place: Chengdu, China
-  date: May 16-19, 2022
-  start: 2022-05-16
-  end: 2022-05-19
-  CORE: A
-  BK21: 1
-  sub: DM
-
-- title: ICDM
-  year: 2022
-  id: ICDM23
-  link: https://icdm22.cse.usf.edu/
-  deadline: '2022-06-10 23:59:59'
-  timezone: UTC-7
-  place: Orlando, Florida, USA
-  date: November 28 - December 01, 2022
-  start: 2022-11-28
-  end: 2022-12-01
+- title: SIGIR
+  year: 2023
+  id: SIGIR23
+  link: https://sigir.org/sigir2023/
+  deadline: TBA
+  timezone: UTC-12
+  place: Taipei, Taiwan
+  date: TBA
   CORE: A*
   BK21: 4
   sub: DM
 
-- title: ICDE Round C
-  year: 2023
-  id: ICDE23-C
-  link: https://icde2023.ics.uci.edu/
-  deadline: '2022-10-08 23:59:59'
-  timezone: UTC-8
-  place: Anaheim, California, USA
-  date: April 03-07, 2023
-  start: 2023-04-03
-  end: 2023-04-07
+- title: SIGKDD
+  year: 2022
+  id: KDD22
+  link: https://www.kdd.org/kdd2022/index.html
+  deadline: '2022-02-10 23:59:59'
+  timezone: UTC-12
+  place: Washington D.C, USA
+  date: August 14-18, 2023
+  start: 2022-08-14
+  end: 2022-08-18
   CORE: A*
-  BK21: 3
-  sub: DB
+  BK21: 4
+  sub: DM
 
 - title: SIGMOD
   year: 2023
@@ -181,6 +182,19 @@
   sub: DB
   hindex: 100
   
+- title: SPIRE
+  year: 2022
+  id: SPIRE22
+  link: http://spire2022.inf.udec.cl/
+  deadline: '2022-06-24 23:59:59'
+  timezone: UTC-12
+  place: Concepción, Chile
+  date: November 08-10, 2023
+  start: 2022-11-08
+  end: 2022-11-10
+  CORE: B
+  sub: AL
+
 - title: TheWebConf
   year: 2023
   id: WWW23
@@ -210,29 +224,18 @@
   CORE: B
   sub: AL
 
-- title: ECML-PKDD
+- title: WSDM
   year: 2023
-  id: ECMLPKDD23
-  link: https://2023.ecmlpkdd.org/
-  deadline: 'TBA'
-  #timezone: UTC-12
-  place: Turin, Italy
-  date: September 18-22, 2023
-  start: 2023-09-18
-  end: 2023-09-22
-  CORE: A
+  id: WSDM23
+  link: https://www.wsdm-conference.org/
+  deadline: '2022-08-12 23:59:59'
+  timezone: UTC-12
+  place: Singapore
+  date: Feburary 27 - March 03, 2023
+  start: 2023-02-27
+  end: 2023-03-03
+  CORE: A*
+  BK21: 3
   sub: DM
 
-- title: ISAAC
-  year: 2022
-  id: ISAAC22
-  link: https://isa.hanyang.ac.kr/isaac2022/
-  deadline: '2022-06-27 23:59:59'
-  timezone: UTC-12
-  place: Seoul, Republic of Korea
-  date: December 19-21, 2022
-  start: 2022-12-19
-  end: 2022-12-21
-  CORE: A
-  BK21: 1
-  sub: AL
+
