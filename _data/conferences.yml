@@ -112,6 +112,19 @@
   CORE: A
   BK21: 1
   sub: AL
+  
+- title: IWOCA
+  year: 2022
+  id: IWOCA22
+  link: https://www.uni-trier.de/en/universitaet/fachbereiche-faecher/fachbereich-iv/faecher/informatikwissenschaften/professuren/theoretische-informatik/research/conferences-and-workshops/iwoca-2022
+  deadline: '2022-01-11 23:59:59'
+  timezone: UTC+2
+  place: Trier, Germany
+  date: June 07-09, 2022
+  start: 2022-06-07
+  end: 2022-06-09
+  CORE: B
+  sub: AL
 
 - title: PAKDD
   year: 2023
