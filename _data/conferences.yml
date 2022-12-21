@@ -40,6 +40,22 @@
   CORE: A
   sub: DM
 
+- title: EMNLP
+  year: 2022
+  id: EMNLP
+  link: https://2022.emnlp.org/
+  deadline: '2022-07-24 23:59:59'
+  timezone: UTC-12
+  place: Abu Dhabi, United Arab Emirates
+  date: December 09-11, 2022
+  start: 2022-12-09
+  end: 2022-12-11
+  CORE: A
+  BK21: 3
+  sub: ML
+  decision: '2022-10-06 23:59:59'
+  note: Decisions will be released in Oct 06
+
 - title: ICDE Round C
   year: 2023
   id: ICDE23-C
@@ -68,21 +84,6 @@
   BK21: 4
   sub: DM
 
-- title: ICLR
-  year: 2023
-  id: ICLR
-  link: https://iclr.cc
-  deadline: '2022-09-28 23:59:59'
-  timezone: UTC-12
-  place: Kigali, Rwanda
-  date: May 01-05, 2023
-  start: 2023-05-01
-  end: 2023-05-05
-  CORE: A*
-  BK21: 4
-  sub: ML
-  note: Reviews will be released in Nov 05, 03:00 CAT
-
 - title: ISAAC
   year: 2022
   id: ISAAC22
@@ -95,19 +96,6 @@
   end: 2022-12-21
   CORE: A
   BK21: 1
-  sub: AL
-  
-- title: IWOCA
-  year: 2022
-  id: IWOCA22
-  link: https://www.uni-trier.de/en/universitaet/fachbereiche-faecher/fachbereich-iv/faecher/informatikwissenschaften/professuren/theoretische-informatik/research/conferences-and-workshops/iwoca-2022
-  deadline: '2022-01-11 23:59:59'
-  timezone: UTC+2
-  place: Trier, Germany
-  date: June 07-09, 2022
-  start: 2022-06-07
-  end: 2022-06-09
-  CORE: B
   sub: AL
 
 - title: PAKDD
@@ -142,24 +130,26 @@
   year: 2023
   id: SIGIR23
   link: https://sigir.org/sigir2023/
-  deadline: TBA
+  deadline: '2023-01-31 23:59:59'
   timezone: UTC-12
   place: Taipei, Taiwan
-  date: TBA
+  date: July 23-27, 2023
+  start: 2023-07-23
+  end: 2023-07-27
   CORE: A*
   BK21: 4
   sub: DM
 
 - title: SIGKDD
-  year: 2022
-  id: KDD22
-  link: https://www.kdd.org/kdd2022/index.html
-  deadline: '2022-02-10 23:59:59'
+  year: 2023
+  id: KDD23
+  link: https://kdd.org/kdd2023/
+  deadline: '2023-02-03 23:59:59'
   timezone: UTC-12
-  place: Washington D.C, USA
-  date: August 14-18, 2022
-  start: 2022-08-14
-  end: 2022-08-18
+  place: Longbeach, CA, USA
+  date: August 06-10, 2022
+  start: 2023-08-06
+  end: 2023-08-10
   CORE: A*
   BK21: 4
   sub: DM
