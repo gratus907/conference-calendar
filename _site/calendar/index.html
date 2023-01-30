@@ -8,11 +8,11 @@
 <title>Conference Deadlines</title>
 <meta name="description" content="Countdowns to top conferences I am interested in">
 <meta name="author" content="Originally by Abhishek Das">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1664975830" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1675043549" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1664975830" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1664975830" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1675043549" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1675043549" media="screen,projection">
 
 <link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
 
@@ -415,16 +415,16 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
-      id: "KDD22-deadline",
-      abbreviation: "KDD22",
-      name: "SIGKDD 2022",
+      id: "CIKM22-deadline",
+      abbreviation: "CIKM22",
+      name: "CIKM 2022",
       color: "red",
-      location: "Washington D.C, USA",
-      date: "August 14-18, 2023",
+      location: "Atlanta, Georgia, USA",
+      date: "October 17-22, 2022",
       hindex: "",
       subject: "DM",
-      startDate: Date.parse("2022-02-10 23:59:59"),
-      endDate: Date.parse("2022-02-10 23:59:59"),
+      startDate: Date.parse("2022-05-12 23:59:59"),
+      endDate: Date.parse("2022-05-12 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -443,59 +443,16 @@ function load_conference_list() {
             
       
       conf_list_all.push({
-        id: "KDD22-conference",
-        abbreviation: "KDD22",
-        name: "SIGKDD 2022",
+        id: "CIKM22-conference",
+        abbreviation: "CIKM22",
+        name: "CIKM 2022",
         color: color,
-        location: "Washington D.C, USA",
-        date: "August 14-18, 2023",
+        location: "Atlanta, Georgia, USA",
+        date: "October 17-22, 2022",
         hindex: "",
         subject: "DM",
-        startDate: Date.parse("2022-08-14"),
-        endDate: Date.parse("2022-08-18"),
-      });
-    
-  
-    // add deadlines in red
-    conf_list_all.push({
-      id: "SPIRE22-deadline",
-      abbreviation: "SPIRE22",
-      name: "SPIRE 2022",
-      color: "red",
-      location: "Concepción, Chile",
-      date: "November 08-10, 2023",
-      hindex: "",
-      subject: "AL",
-      startDate: Date.parse("2022-06-24 23:59:59"),
-      endDate: Date.parse("2022-06-24 23:59:59"),
-    });
-
-    // add Conferences in chosen color
-    
-      var color = "black";
-       // use first sub to choose color
-      
-            
-      
-            
-                    color = "#deff0a";
-            
-      
-            
-      
-            
-      
-      conf_list_all.push({
-        id: "SPIRE22-conference",
-        abbreviation: "SPIRE22",
-        name: "SPIRE 2022",
-        color: color,
-        location: "Concepción, Chile",
-        date: "November 08-10, 2023",
-        hindex: "",
-        subject: "AL",
-        startDate: Date.parse("2022-11-08"),
-        endDate: Date.parse("2022-11-10"),
+        startDate: Date.parse("2022-10-17"),
+        endDate: Date.parse("2022-10-22"),
       });
     
   
@@ -506,7 +463,7 @@ function load_conference_list() {
       name: "CPM 2022",
       color: "red",
       location: "Prague, Czech Republic",
-      date: "June 27-29, 2023",
+      date: "June 27-29, 2022",
       hindex: "",
       subject: "AL",
       startDate: Date.parse("2022-02-05 23:59:59"),
@@ -534,11 +491,54 @@ function load_conference_list() {
         name: "CPM 2022",
         color: color,
         location: "Prague, Czech Republic",
-        date: "June 27-29, 2023",
+        date: "June 27-29, 2022",
         hindex: "",
         subject: "AL",
         startDate: Date.parse("2022-06-27"),
         endDate: Date.parse("2022-06-29"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "ECMLPKDD23-deadline",
+      abbreviation: "ECMLPKDD23",
+      name: "ECML-PKDD 2023",
+      color: "red",
+      location: "Turin, Italy",
+      date: "September 18-22, 2023",
+      hindex: "",
+      subject: "DM",
+      startDate: Date.parse("TBA"),
+      endDate: Date.parse("TBA"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+      
+            
+                    color = "#0aefff";
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ECMLPKDD23-conference",
+        abbreviation: "ECMLPKDD23",
+        name: "ECML-PKDD 2023",
+        color: color,
+        location: "Turin, Italy",
+        date: "September 18-22, 2023",
+        hindex: "",
+        subject: "DM",
+        startDate: Date.parse("2023-09-18"),
+        endDate: Date.parse("2023-09-22"),
       });
     
   
@@ -587,16 +587,16 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
-      id: "ICLR-deadline",
-      abbreviation: "ICLR",
-      name: "ICLR 2023",
+      id: "ICDE23-C-deadline",
+      abbreviation: "ICDE23-C",
+      name: "ICDE Round C 2023",
       color: "red",
-      location: "Kigali, Rwanda",
-      date: "May 01-05, 2023",
+      location: "Anaheim, California, USA",
+      date: "April 03-07, 2023",
       hindex: "",
-      subject: "ML",
-      startDate: Date.parse("2022-09-28 23:59:59"),
-      endDate: Date.parse("2022-09-28 23:59:59"),
+      subject: "DB",
+      startDate: Date.parse("2022-10-08 23:59:59"),
+      endDate: Date.parse("2022-10-08 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -605,41 +605,41 @@ function load_conference_list() {
        // use first sub to choose color
       
             
-                    color = "#ffd300";
-            
       
             
       
             
       
+            
+                    color = "#147df5";
             
       
       conf_list_all.push({
-        id: "ICLR-conference",
-        abbreviation: "ICLR",
-        name: "ICLR 2023",
+        id: "ICDE23-C-conference",
+        abbreviation: "ICDE23-C",
+        name: "ICDE Round C 2023",
         color: color,
-        location: "Kigali, Rwanda",
-        date: "May 01-05, 2023",
+        location: "Anaheim, California, USA",
+        date: "April 03-07, 2023",
         hindex: "",
-        subject: "ML",
-        startDate: Date.parse("2023-05-01"),
-        endDate: Date.parse("2023-05-05"),
+        subject: "DB",
+        startDate: Date.parse("2023-04-03"),
+        endDate: Date.parse("2023-04-07"),
       });
     
   
     // add deadlines in red
     conf_list_all.push({
-      id: "CIKM22-deadline",
-      abbreviation: "CIKM22",
-      name: "CIKM 2022",
+      id: "ICDM23-deadline",
+      abbreviation: "ICDM23",
+      name: "ICDM 2023",
       color: "red",
-      location: "Atlanta, Georgia, USA",
-      date: "October 17-22, 2023",
+      location: "Shanghai, China",
+      date: "December 01 - December 04, 2023",
       hindex: "",
       subject: "DM",
-      startDate: Date.parse("2022-05-12 23:59:59"),
-      endDate: Date.parse("2022-05-12 23:59:59"),
+      startDate: Date.parse("2023-06-01 23:59:59"),
+      endDate: Date.parse("2023-06-01 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -658,31 +658,74 @@ function load_conference_list() {
             
       
       conf_list_all.push({
-        id: "CIKM22-conference",
-        abbreviation: "CIKM22",
-        name: "CIKM 2022",
+        id: "ICDM23-conference",
+        abbreviation: "ICDM23",
+        name: "ICDM 2023",
         color: color,
-        location: "Atlanta, Georgia, USA",
-        date: "October 17-22, 2023",
+        location: "Shanghai, China",
+        date: "December 01 - December 04, 2023",
         hindex: "",
         subject: "DM",
-        startDate: Date.parse("2022-10-17"),
-        endDate: Date.parse("2022-10-22"),
+        startDate: Date.parse("2023-12-01"),
+        endDate: Date.parse("2023-12-04"),
       });
     
   
     // add deadlines in red
     conf_list_all.push({
-      id: "SIGIR23-deadline",
-      abbreviation: "SIGIR23",
-      name: "SIGIR 2023",
+      id: "ISAAC22-deadline",
+      abbreviation: "ISAAC22",
+      name: "ISAAC 2022",
       color: "red",
-      location: "Taipei, Taiwan",
-      date: "TBA",
+      location: "Seoul, Republic of Korea",
+      date: "December 19-21, 2022",
+      hindex: "",
+      subject: "AL",
+      startDate: Date.parse("2022-06-27 23:59:59"),
+      endDate: Date.parse("2022-06-27 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#deff0a";
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "ISAAC22-conference",
+        abbreviation: "ISAAC22",
+        name: "ISAAC 2022",
+        color: color,
+        location: "Seoul, Republic of Korea",
+        date: "December 19-21, 2022",
+        hindex: "",
+        subject: "AL",
+        startDate: Date.parse("2022-12-19"),
+        endDate: Date.parse("2022-12-21"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "PAKDD23-deadline",
+      abbreviation: "PAKDD23",
+      name: "PAKDD 2023",
+      color: "red",
+      location: "Osaka, Japan",
+      date: "May 25-28, 2023",
       hindex: "",
       subject: "DM",
-      startDate: Date.parse("TBA"),
-      endDate: Date.parse("TBA"),
+      startDate: Date.parse("2022-11-24 23:59:59"),
+      endDate: Date.parse("2022-11-24 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -701,59 +744,16 @@ function load_conference_list() {
             
       
       conf_list_all.push({
-        id: "SIGIR23-conference",
-        abbreviation: "SIGIR23",
-        name: "SIGIR 2023",
+        id: "PAKDD23-conference",
+        abbreviation: "PAKDD23",
+        name: "PAKDD 2023",
         color: color,
-        location: "Taipei, Taiwan",
-        date: "TBA",
+        location: "Osaka, Japan",
+        date: "May 25-28, 2023",
         hindex: "",
         subject: "DM",
-        startDate: Date.parse(""),
-        endDate: Date.parse(""),
-      });
-    
-  
-    // add deadlines in red
-    conf_list_all.push({
-      id: "WSDM23-deadline",
-      abbreviation: "WSDM23",
-      name: "WSDM 2023",
-      color: "red",
-      location: "Singapore",
-      date: "Feburary 27 - March 03, 2023",
-      hindex: "",
-      subject: "DM",
-      startDate: Date.parse("2022-08-12 23:59:59"),
-      endDate: Date.parse("2022-08-12 23:59:59"),
-    });
-
-    // add Conferences in chosen color
-    
-      var color = "black";
-       // use first sub to choose color
-      
-            
-      
-            
-      
-            
-                    color = "#0aefff";
-            
-      
-            
-      
-      conf_list_all.push({
-        id: "WSDM23-conference",
-        abbreviation: "WSDM23",
-        name: "WSDM 2023",
-        color: color,
-        location: "Singapore",
-        date: "Feburary 27 - March 03, 2023",
-        hindex: "",
-        subject: "DM",
-        startDate: Date.parse("2023-02-27"),
-        endDate: Date.parse("2023-03-03"),
+        startDate: Date.parse("2022-05-25"),
+        endDate: Date.parse("2022-05-28"),
       });
     
   
@@ -802,16 +802,16 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
-      id: "PAKDD22-deadline",
-      abbreviation: "PAKDD22",
-      name: "PAKDD 2022",
+      id: "SIGIR23-deadline",
+      abbreviation: "SIGIR23",
+      name: "SIGIR 2023",
       color: "red",
-      location: "Chengdu, China",
-      date: "May 16-19, 2022",
+      location: "Taipei, Taiwan",
+      date: "July 23-27, 2023",
       hindex: "",
       subject: "DM",
-      startDate: Date.parse("2021-11-15 23:59:59"),
-      endDate: Date.parse("2021-11-15 23:59:59"),
+      startDate: Date.parse("2023-01-31 23:59:59"),
+      endDate: Date.parse("2023-01-31 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -830,31 +830,31 @@ function load_conference_list() {
             
       
       conf_list_all.push({
-        id: "PAKDD22-conference",
-        abbreviation: "PAKDD22",
-        name: "PAKDD 2022",
+        id: "SIGIR23-conference",
+        abbreviation: "SIGIR23",
+        name: "SIGIR 2023",
         color: color,
-        location: "Chengdu, China",
-        date: "May 16-19, 2022",
+        location: "Taipei, Taiwan",
+        date: "July 23-27, 2023",
         hindex: "",
         subject: "DM",
-        startDate: Date.parse("2022-05-16"),
-        endDate: Date.parse("2022-05-19"),
+        startDate: Date.parse("2023-07-23"),
+        endDate: Date.parse("2023-07-27"),
       });
     
   
     // add deadlines in red
     conf_list_all.push({
-      id: "ICDM23-deadline",
-      abbreviation: "ICDM23",
-      name: "ICDM 2022",
+      id: "KDD23-deadline",
+      abbreviation: "KDD23",
+      name: "SIGKDD 2023",
       color: "red",
-      location: "Orlando, Florida, USA",
-      date: "November 28 - December 01, 2022",
+      location: "Longbeach, CA, USA",
+      date: "August 06-10, 2022",
       hindex: "",
       subject: "DM",
-      startDate: Date.parse("2022-06-10 23:59:59"),
-      endDate: Date.parse("2022-06-10 23:59:59"),
+      startDate: Date.parse("2023-02-03 23:59:59"),
+      endDate: Date.parse("2023-02-03 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -873,59 +873,16 @@ function load_conference_list() {
             
       
       conf_list_all.push({
-        id: "ICDM23-conference",
-        abbreviation: "ICDM23",
-        name: "ICDM 2022",
+        id: "KDD23-conference",
+        abbreviation: "KDD23",
+        name: "SIGKDD 2023",
         color: color,
-        location: "Orlando, Florida, USA",
-        date: "November 28 - December 01, 2022",
+        location: "Longbeach, CA, USA",
+        date: "August 06-10, 2022",
         hindex: "",
         subject: "DM",
-        startDate: Date.parse("2022-11-28"),
-        endDate: Date.parse("2022-12-01"),
-      });
-    
-  
-    // add deadlines in red
-    conf_list_all.push({
-      id: "ICDE23-C-deadline",
-      abbreviation: "ICDE23-C",
-      name: "ICDE Round C 2023",
-      color: "red",
-      location: "Anaheim, California, USA",
-      date: "April 03-07, 2023",
-      hindex: "",
-      subject: "DB",
-      startDate: Date.parse("2022-10-08 23:59:59"),
-      endDate: Date.parse("2022-10-08 23:59:59"),
-    });
-
-    // add Conferences in chosen color
-    
-      var color = "black";
-       // use first sub to choose color
-      
-            
-      
-            
-      
-            
-      
-            
-                    color = "#147df5";
-            
-      
-      conf_list_all.push({
-        id: "ICDE23-C-conference",
-        abbreviation: "ICDE23-C",
-        name: "ICDE Round C 2023",
-        color: color,
-        location: "Anaheim, California, USA",
-        date: "April 03-07, 2023",
-        hindex: "",
-        subject: "DB",
-        startDate: Date.parse("2023-04-03"),
-        endDate: Date.parse("2023-04-07"),
+        startDate: Date.parse("2023-08-06"),
+        endDate: Date.parse("2023-08-10"),
       });
     
   
@@ -969,6 +926,49 @@ function load_conference_list() {
         subject: "DB",
         startDate: Date.parse("2023-06-18"),
         endDate: Date.parse("2023-06-23"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "SPIRE22-deadline",
+      abbreviation: "SPIRE22",
+      name: "SPIRE 2022",
+      color: "red",
+      location: "Concepción, Chile",
+      date: "November 08-10, 2022",
+      hindex: "",
+      subject: "AL",
+      startDate: Date.parse("2022-06-24 23:59:59"),
+      endDate: Date.parse("2022-06-24 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
+      
+            
+                    color = "#deff0a";
+            
+      
+            
+      
+            
+      
+      conf_list_all.push({
+        id: "SPIRE22-conference",
+        abbreviation: "SPIRE22",
+        name: "SPIRE 2022",
+        color: color,
+        location: "Concepción, Chile",
+        date: "November 08-10, 2022",
+        hindex: "",
+        subject: "AL",
+        startDate: Date.parse("2022-11-08"),
+        endDate: Date.parse("2022-11-10"),
       });
     
   
@@ -1060,16 +1060,16 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
-      id: "ECMLPKDD23-deadline",
-      abbreviation: "ECMLPKDD23",
-      name: "ECML-PKDD 2023",
+      id: "WSDM23-deadline",
+      abbreviation: "WSDM23",
+      name: "WSDM 2023",
       color: "red",
-      location: "Turin, Italy",
-      date: "September 18-22, 2023",
+      location: "Singapore",
+      date: "Feburary 27 - March 03, 2023",
       hindex: "",
       subject: "DM",
-      startDate: Date.parse("TBA"),
-      endDate: Date.parse("TBA"),
+      startDate: Date.parse("2022-08-12 23:59:59"),
+      endDate: Date.parse("2022-08-12 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -1088,59 +1088,16 @@ function load_conference_list() {
             
       
       conf_list_all.push({
-        id: "ECMLPKDD23-conference",
-        abbreviation: "ECMLPKDD23",
-        name: "ECML-PKDD 2023",
+        id: "WSDM23-conference",
+        abbreviation: "WSDM23",
+        name: "WSDM 2023",
         color: color,
-        location: "Turin, Italy",
-        date: "September 18-22, 2023",
+        location: "Singapore",
+        date: "Feburary 27 - March 03, 2023",
         hindex: "",
         subject: "DM",
-        startDate: Date.parse("2023-09-18"),
-        endDate: Date.parse("2023-09-22"),
-      });
-    
-  
-    // add deadlines in red
-    conf_list_all.push({
-      id: "ISAAC22-deadline",
-      abbreviation: "ISAAC22",
-      name: "ISAAC 2022",
-      color: "red",
-      location: "Seoul, Republic of Korea",
-      date: "December 19-21, 2022",
-      hindex: "",
-      subject: "AL",
-      startDate: Date.parse("2022-06-27 23:59:59"),
-      endDate: Date.parse("2022-06-27 23:59:59"),
-    });
-
-    // add Conferences in chosen color
-    
-      var color = "black";
-       // use first sub to choose color
-      
-            
-      
-            
-                    color = "#deff0a";
-            
-      
-            
-      
-            
-      
-      conf_list_all.push({
-        id: "ISAAC22-conference",
-        abbreviation: "ISAAC22",
-        name: "ISAAC 2022",
-        color: color,
-        location: "Seoul, Republic of Korea",
-        date: "December 19-21, 2022",
-        hindex: "",
-        subject: "AL",
-        startDate: Date.parse("2022-12-19"),
-        endDate: Date.parse("2022-12-21"),
+        startDate: Date.parse("2023-02-27"),
+        endDate: Date.parse("2023-03-03"),
       });
     
   

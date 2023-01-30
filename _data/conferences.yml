@@ -70,16 +70,17 @@
   BK21: 3
   sub: DB
 
+
 - title: ICDM
-  year: 2022
+  year: 2023
   id: ICDM23
-  link: https://icdm22.cse.usf.edu/
-  deadline: '2022-06-10 23:59:59'
-  timezone: UTC-7
-  place: Orlando, Florida, USA
-  date: November 28 - December 01, 2022
-  start: 2022-11-28
-  end: 2022-12-01
+  link: http://www.cloud-conf.net/icdm2023/index.html
+  deadline: '2023-06-01 23:59:59'
+  timezone: UTC+8
+  place: Shanghai, China
+  date: December 01 - December 04, 2023
+  start: 2023-12-01
+  end: 2023-12-04
   CORE: A*
   BK21: 4
   sub: DM
@@ -224,5 +225,3 @@
   CORE: A*
   BK21: 3
   sub: DM
-
-
