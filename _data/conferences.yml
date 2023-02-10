@@ -40,22 +40,6 @@
   CORE: A
   sub: DM
 
-- title: EMNLP
-  year: 2022
-  id: EMNLP
-  link: https://2022.emnlp.org/
-  deadline: '2022-07-24 23:59:59'
-  timezone: UTC-12
-  place: Abu Dhabi, United Arab Emirates
-  date: December 09-11, 2022
-  start: 2022-12-09
-  end: 2022-12-11
-  CORE: A
-  BK21: 3
-  sub: ML
-  decision: '2022-10-06 23:59:59'
-  note: Decisions will be released in Oct 06
-
 - title: ICDE Round C
   year: 2023
   id: ICDE23-C
@@ -67,6 +51,7 @@
   start: 2023-04-03
   end: 2023-04-07
   CORE: A*
+  SNU: True
   BK21: 3
   sub: DB
 
@@ -82,6 +67,7 @@
   start: 2023-12-01
   end: 2023-12-04
   CORE: A*
+  SNU: True
   BK21: 4
   sub: DM
 
@@ -138,6 +124,7 @@
   start: 2023-07-23
   end: 2023-07-27
   CORE: A*
+  SNU: True
   BK21: 4
   sub: DM
 
@@ -152,21 +139,23 @@
   start: 2023-08-06
   end: 2023-08-10
   CORE: A*
+  SNU: True
   BK21: 4
   sub: DM
 
-- title: SIGMOD
-  year: 2023
-  id: SIGMOD23
-  link: http://2023.sigmod.org/
-  deadline: '2022-10-15 23:59:59'
+- title: SIGMOD Round 2
+  year: 2024
+  id: SIGMOD24
+  link: http://2024.sigmod.org/
+  deadline: '2023-04-15 23:59:59'
   timezone: UTC-8
-  place: Seattle, Washington, USA
-  date: June 18-23, 2023
-  start: 2023-06-18
-  end: 2023-06-23
+  place: Santiago, Chile
+  date: June 11-16, 2023
+  start: 2024-06-11
+  end: 2024-06-16
   CORE: A*
   BK21: 4
+  SNU: True
   sub: DB
   hindex: 100
   
@@ -195,6 +184,7 @@
   start: 2023-05-01
   end: 2023-05-05
   CORE: A*
+  SNU: True
   BK21: 4
   sub: DM
   note: Abstract submission due October 6th
