@@ -31,8 +31,8 @@
   year: 2023
   id: ECMLPKDD23
   link: https://2023.ecmlpkdd.org/
-  deadline: 'TBA'
-  #timezone: UTC-12
+  deadline: '2023-04-02 23:59:59'
+  timezone: UTC-12
   place: Turin, Italy
   date: September 18-22, 2023
   start: 2023-09-18
