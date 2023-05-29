@@ -40,16 +40,16 @@
   CORE: A
   sub: DM
 
-- title: ICDE Round C
-  year: 2023
-  id: ICDE23-C
-  link: https://icde2023.ics.uci.edu/
-  deadline: '2022-10-08 23:59:59'
-  timezone: UTC-8
-  place: Anaheim, California, USA
-  date: April 03-07, 2023
-  start: 2023-04-03
-  end: 2023-04-07
+- title: ICDE First Round
+  year: 2024
+  id: ICDE24-A
+  link: https://icde2024.github.io/index.html
+  deadline: '2023-07-28 23:59:59'
+  timezone: UTC-12
+  place: Utrechet, Netherlands
+  date: April 16-19, 2024
+  start: 2024-04-16
+  end: 2024-04-19
   CORE: A*
   SNU: True
   BK21: 3
@@ -72,15 +72,15 @@
   sub: DM
 
 - title: ISAAC
-  year: 2022
-  id: ISAAC22
-  link: https://isa.hanyang.ac.kr/isaac2022/
-  deadline: '2022-06-27 23:59:59'
+  year: 2023
+  id: ISAAC23
+  link: https://www.kurims.kyoto-u.ac.jp/isaac/isaac2023/
+  deadline: '2023-06-30 23:59:59'
   timezone: UTC-12
-  place: Seoul, Republic of Korea
-  date: December 19-21, 2022
-  start: 2022-12-19
-  end: 2022-12-21
+  place: Kyoto, Japan
+  date: December 3-6, 2022
+  start: 2023-12-03
+  end: 2023-12-06
   CORE: A
   BK21: 1
   sub: AL
@@ -143,11 +143,11 @@
   BK21: 4
   sub: DM
 
-- title: SIGMOD Round 2
+- title: SIGMOD Round 3
   year: 2024
   id: SIGMOD24
   link: http://2024.sigmod.org/
-  deadline: '2023-04-15 23:59:59'
+  deadline: '2023-07-15 23:59:59'
   timezone: UTC-8
   place: Santiago, Chile
   date: June 11-16, 2023
@@ -157,18 +157,32 @@
   BK21: 4
   SNU: True
   sub: DB
-  hindex: 100
+
+- title: SIGMOD
+  year: 2024 (Decision)
+  id: SIGMOD24-Decision
+  link: http://2024.sigmod.org/
+  deadline: '2023-06-20 11:00:00'
+  timezone: UTC-8
+  place: Santiago, Chile
+  date: June 11-16, 2023
+  start: 2024-06-11
+  end: 2024-06-16
+  CORE: A*
+  BK21: 4
+  SNU: True
+  sub: DB
   
 - title: SPIRE
-  year: 2022
-  id: SPIRE22
-  link: http://spire2022.inf.udec.cl/
-  deadline: '2022-06-24 23:59:59'
+  year: 2023
+  id: SPIRE23
+  link: http://spire2023.isti.cnr.it/
+  deadline: '2023-06-02 23:59:59'
   timezone: UTC-12
-  place: Concepción, Chile
-  date: November 08-10, 2022
-  start: 2022-11-08
-  end: 2022-11-10
+  place: Pisa, Italy
+  date: September 26-28, 2023
+  start: 2023-09-26
+  end: 2023-09-28
   CORE: B
   sub: AL
 
@@ -203,15 +217,15 @@
   sub: AL
 
 - title: WSDM
-  year: 2023
-  id: WSDM23
-  link: https://www.wsdm-conference.org/
-  deadline: '2022-08-12 23:59:59'
+  year: 2024
+  id: WSDM24
+  link: https://www.wsdm-conference.org/2024/
+  deadline: '2023-08-10 23:59:59'
   timezone: UTC-12
-  place: Singapore
-  date: Feburary 27 - March 03, 2023
-  start: 2023-02-27
-  end: 2023-03-03
+  place: Mérida, Mexico
+  date: March 04-08, 2024
+  start: 2023-03-04
+  end: 2023-03-08
   CORE: A*
   BK21: 3
   sub: DM

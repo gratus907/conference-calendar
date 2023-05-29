@@ -1,7 +1,4 @@
 ---
-- name: Machine Learning
-  sub: ML
-  color: "#ffd300"
 - name: Algorithms
   sub: AL
   color: "#deff0a"

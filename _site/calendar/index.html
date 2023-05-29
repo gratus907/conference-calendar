@@ -8,11 +8,11 @@
 <title>Conference Deadlines</title>
 <meta name="description" content="Countdowns to top conferences I am interested in">
 <meta name="author" content="Originally by Abhishek Das">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1676011624" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/js-year-calendar.min.css?t=1685324569" media="screen,projection">
 
 <link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1676011624" media="screen,projection">
-<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1676011624" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/deadlines.css?t=1685324569" media="screen,projection">
+<link rel="stylesheet" type="text/css" href="/conference-calendar/static/css/calendar.css?t=1685324569" media="screen,projection">
 
 <link rel="shortcut icon" href="/conference-calendar/static/img/favicon.png">
 
@@ -87,10 +87,6 @@
                   multiple="multiple"
                   style="display: none"
                 >
-                  
-                  <option value="ML" id="ML-checkbox">
-                    Machine Learning (ML)
-                  </option>
                   
                   <option value="AL" id="AL-checkbox">
                     Algorithms (AL)
@@ -171,10 +167,6 @@
         </div>
         <div class="col-6 col-sm-4">
           <span class="color-box" style="background-color: gray"></span> Today
-        </div>
-        
-        <div class="col-6 col-sm-4">
-          <span class="color-box" style="background-color: #ffd300"></span> Machine Learning
         </div>
         
         <div class="col-6 col-sm-4">
@@ -270,7 +262,7 @@ function createCalendarFromObject(data) {
 var subs = [];
 var _all_subs = [];
 // Get all subs
-var conf_type_data = [{"name":"Machine Learning","sub":"ML","color":"#ffd300"},{"name":"Algorithms","sub":"AL","color":"#deff0a"},{"name":"Data Mining","sub":"DM","color":"#0aefff"},{"name":"Database / Big Data","sub":"DB","color":"#147df5"}];
+var conf_type_data = [{"name":"Algorithms","sub":"AL","color":"#deff0a"},{"name":"Data Mining","sub":"DM","color":"#0aefff"},{"name":"Database / Big Data","sub":"DB","color":"#147df5"}];
 var sub2name = {}; var name2sub = {};
 for (var i = 0; i < conf_type_data.length; i++) {
     _all_subs[i] = conf_type_data[i]['sub'];
@@ -435,8 +427,6 @@ function load_conference_list() {
             
       
             
-      
-            
                     color = "#0aefff";
             
       
@@ -476,8 +466,6 @@ function load_conference_list() {
        // use first sub to choose color
       
             
-      
-            
                     color = "#deff0a";
             
       
@@ -509,16 +497,14 @@ function load_conference_list() {
       date: "September 18-22, 2023",
       hindex: "",
       subject: "DM",
-      startDate: Date.parse("TBA"),
-      endDate: Date.parse("TBA"),
+      startDate: Date.parse("2023-04-02 23:59:59"),
+      endDate: Date.parse("2023-04-02 23:59:59"),
     });
 
     // add Conferences in chosen color
     
       var color = "black";
        // use first sub to choose color
-      
-            
       
             
       
@@ -544,16 +530,16 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
-      id: "ICDE23-C-deadline",
-      abbreviation: "ICDE23-C",
-      name: "ICDE Round C 2023",
+      id: "ICDE24-A-deadline",
+      abbreviation: "ICDE24-A",
+      name: "ICDE First Round 2024",
       color: "red",
-      location: "Anaheim, California, USA",
-      date: "April 03-07, 2023",
+      location: "Utrechet, Netherlands",
+      date: "April 16-19, 2024",
       hindex: "",
       subject: "DB",
-      startDate: Date.parse("2022-10-08 23:59:59"),
-      endDate: Date.parse("2022-10-08 23:59:59"),
+      startDate: Date.parse("2023-07-28 23:59:59"),
+      endDate: Date.parse("2023-07-28 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -566,22 +552,20 @@ function load_conference_list() {
             
       
             
-      
-            
                     color = "#147df5";
             
       
       conf_list_all.push({
-        id: "ICDE23-C-conference",
-        abbreviation: "ICDE23-C",
-        name: "ICDE Round C 2023",
+        id: "ICDE24-A-conference",
+        abbreviation: "ICDE24-A",
+        name: "ICDE First Round 2024",
         color: color,
-        location: "Anaheim, California, USA",
-        date: "April 03-07, 2023",
+        location: "Utrechet, Netherlands",
+        date: "April 16-19, 2024",
         hindex: "",
         subject: "DB",
-        startDate: Date.parse("2023-04-03"),
-        endDate: Date.parse("2023-04-07"),
+        startDate: Date.parse("2024-04-16"),
+        endDate: Date.parse("2024-04-19"),
       });
     
   
@@ -607,8 +591,6 @@ function load_conference_list() {
             
       
             
-      
-            
                     color = "#0aefff";
             
       
@@ -630,24 +612,22 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
-      id: "ISAAC22-deadline",
-      abbreviation: "ISAAC22",
-      name: "ISAAC 2022",
+      id: "ISAAC23-deadline",
+      abbreviation: "ISAAC23",
+      name: "ISAAC 2023",
       color: "red",
-      location: "Seoul, Republic of Korea",
-      date: "December 19-21, 2022",
+      location: "Kyoto, Japan",
+      date: "December 3-6, 2022",
       hindex: "",
       subject: "AL",
-      startDate: Date.parse("2022-06-27 23:59:59"),
-      endDate: Date.parse("2022-06-27 23:59:59"),
+      startDate: Date.parse("2023-06-30 23:59:59"),
+      endDate: Date.parse("2023-06-30 23:59:59"),
     });
 
     // add Conferences in chosen color
     
       var color = "black";
        // use first sub to choose color
-      
-            
       
             
                     color = "#deff0a";
@@ -658,16 +638,16 @@ function load_conference_list() {
             
       
       conf_list_all.push({
-        id: "ISAAC22-conference",
-        abbreviation: "ISAAC22",
-        name: "ISAAC 2022",
+        id: "ISAAC23-conference",
+        abbreviation: "ISAAC23",
+        name: "ISAAC 2023",
         color: color,
-        location: "Seoul, Republic of Korea",
-        date: "December 19-21, 2022",
+        location: "Kyoto, Japan",
+        date: "December 3-6, 2022",
         hindex: "",
         subject: "AL",
-        startDate: Date.parse("2022-12-19"),
-        endDate: Date.parse("2022-12-21"),
+        startDate: Date.parse("2023-12-03"),
+        endDate: Date.parse("2023-12-06"),
       });
     
   
@@ -689,8 +669,6 @@ function load_conference_list() {
     
       var color = "black";
        // use first sub to choose color
-      
-            
       
             
       
@@ -736,8 +714,6 @@ function load_conference_list() {
             
       
             
-      
-            
                     color = "#0aefff";
             
       
@@ -775,8 +751,6 @@ function load_conference_list() {
     
       var color = "black";
        // use first sub to choose color
-      
-            
       
             
       
@@ -822,8 +796,6 @@ function load_conference_list() {
             
       
             
-      
-            
                     color = "#0aefff";
             
       
@@ -847,22 +819,20 @@ function load_conference_list() {
     conf_list_all.push({
       id: "SIGMOD24-deadline",
       abbreviation: "SIGMOD24",
-      name: "SIGMOD Round 2 2024",
+      name: "SIGMOD Round 3 2024",
       color: "red",
       location: "Santiago, Chile",
       date: "June 11-16, 2023",
-      hindex: "100",
+      hindex: "",
       subject: "DB",
-      startDate: Date.parse("2023-04-15 23:59:59"),
-      endDate: Date.parse("2023-04-15 23:59:59"),
+      startDate: Date.parse("2023-07-15 23:59:59"),
+      endDate: Date.parse("2023-07-15 23:59:59"),
     });
 
     // add Conferences in chosen color
     
       var color = "black";
        // use first sub to choose color
-      
-            
       
             
       
@@ -875,11 +845,11 @@ function load_conference_list() {
       conf_list_all.push({
         id: "SIGMOD24-conference",
         abbreviation: "SIGMOD24",
-        name: "SIGMOD Round 2 2024",
+        name: "SIGMOD Round 3 2024",
         color: color,
         location: "Santiago, Chile",
         date: "June 11-16, 2023",
-        hindex: "100",
+        hindex: "",
         subject: "DB",
         startDate: Date.parse("2024-06-11"),
         endDate: Date.parse("2024-06-16"),
@@ -888,16 +858,16 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
-      id: "SPIRE22-deadline",
-      abbreviation: "SPIRE22",
-      name: "SPIRE 2022",
+      id: "SIGMOD24-Decision-deadline",
+      abbreviation: "SIGMOD24-Decision",
+      name: "SIGMOD 2024 (Decision)",
       color: "red",
-      location: "Concepción, Chile",
-      date: "November 08-10, 2022",
+      location: "Santiago, Chile",
+      date: "June 11-16, 2023",
       hindex: "",
-      subject: "AL",
-      startDate: Date.parse("2022-06-24 23:59:59"),
-      endDate: Date.parse("2022-06-24 23:59:59"),
+      subject: "DB",
+      startDate: Date.parse("2023-06-20 11:00:00"),
+      endDate: Date.parse("2023-06-20 11:00:00"),
     });
 
     // add Conferences in chosen color
@@ -908,6 +878,45 @@ function load_conference_list() {
             
       
             
+      
+            
+                    color = "#147df5";
+            
+      
+      conf_list_all.push({
+        id: "SIGMOD24-Decision-conference",
+        abbreviation: "SIGMOD24-Decision",
+        name: "SIGMOD 2024 (Decision)",
+        color: color,
+        location: "Santiago, Chile",
+        date: "June 11-16, 2023",
+        hindex: "",
+        subject: "DB",
+        startDate: Date.parse("2024-06-11"),
+        endDate: Date.parse("2024-06-16"),
+      });
+    
+  
+    // add deadlines in red
+    conf_list_all.push({
+      id: "SPIRE23-deadline",
+      abbreviation: "SPIRE23",
+      name: "SPIRE 2023",
+      color: "red",
+      location: "Pisa, Italy",
+      date: "September 26-28, 2023",
+      hindex: "",
+      subject: "AL",
+      startDate: Date.parse("2023-06-02 23:59:59"),
+      endDate: Date.parse("2023-06-02 23:59:59"),
+    });
+
+    // add Conferences in chosen color
+    
+      var color = "black";
+       // use first sub to choose color
+      
+            
                     color = "#deff0a";
             
       
@@ -916,16 +925,16 @@ function load_conference_list() {
             
       
       conf_list_all.push({
-        id: "SPIRE22-conference",
-        abbreviation: "SPIRE22",
-        name: "SPIRE 2022",
+        id: "SPIRE23-conference",
+        abbreviation: "SPIRE23",
+        name: "SPIRE 2023",
         color: color,
-        location: "Concepción, Chile",
-        date: "November 08-10, 2022",
+        location: "Pisa, Italy",
+        date: "September 26-28, 2023",
         hindex: "",
         subject: "AL",
-        startDate: Date.parse("2022-11-08"),
-        endDate: Date.parse("2022-11-10"),
+        startDate: Date.parse("2023-09-26"),
+        endDate: Date.parse("2023-09-28"),
       });
     
   
@@ -947,8 +956,6 @@ function load_conference_list() {
     
       var color = "black";
        // use first sub to choose color
-      
-            
       
             
       
@@ -992,8 +999,6 @@ function load_conference_list() {
        // use first sub to choose color
       
             
-      
-            
                     color = "#deff0a";
             
       
@@ -1017,16 +1022,16 @@ function load_conference_list() {
   
     // add deadlines in red
     conf_list_all.push({
-      id: "WSDM23-deadline",
-      abbreviation: "WSDM23",
-      name: "WSDM 2023",
+      id: "WSDM24-deadline",
+      abbreviation: "WSDM24",
+      name: "WSDM 2024",
       color: "red",
-      location: "Singapore",
-      date: "Feburary 27 - March 03, 2023",
+      location: "Mérida, Mexico",
+      date: "March 04-08, 2024",
       hindex: "",
       subject: "DM",
-      startDate: Date.parse("2022-08-12 23:59:59"),
-      endDate: Date.parse("2022-08-12 23:59:59"),
+      startDate: Date.parse("2023-08-10 23:59:59"),
+      endDate: Date.parse("2023-08-10 23:59:59"),
     });
 
     // add Conferences in chosen color
@@ -1037,24 +1042,22 @@ function load_conference_list() {
             
       
             
-      
-            
                     color = "#0aefff";
             
       
             
       
       conf_list_all.push({
-        id: "WSDM23-conference",
-        abbreviation: "WSDM23",
-        name: "WSDM 2023",
+        id: "WSDM24-conference",
+        abbreviation: "WSDM24",
+        name: "WSDM 2024",
         color: color,
-        location: "Singapore",
-        date: "Feburary 27 - March 03, 2023",
+        location: "Mérida, Mexico",
+        date: "March 04-08, 2024",
         hindex: "",
         subject: "DM",
-        startDate: Date.parse("2023-02-27"),
-        endDate: Date.parse("2023-03-03"),
+        startDate: Date.parse("2023-03-04"),
+        endDate: Date.parse("2023-03-08"),
       });
     
   
