@@ -100,9 +100,9 @@
                       <b>Note: </b>{{conf.note}}
                   </div>
                 {% endif %}
-                {% if conf.submitted %}
+                {% if conf.decision %}
                   <div class="note">
-                    <b>Submitted : {{conf.submitted}}</b>
+                    Decision: <span class="decision-timer"></span>
                   </div>
                 {% endif %}
 
@@ -189,6 +189,10 @@
               $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
 
+          $('#{{conf.id}} .decision-timer').countdown(decisionDate.toDate(), function (event) {
+              $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+
           // render countdown timer small
           $('#{{conf.id}} .timer-small').countdown(confDate.toDate(), function (event) {
               $(this).html(event.strftime('%Dd %H:%M:%S'));
@@ -210,13 +214,13 @@
           }
 
           // add calendar button
-          var myCalendar = createCalendarFromObject({
-            id:  '{{conf.id}}',
-            title: '{{conf.title}} {{conf.year}} deadline',
-            date: confDate.toDate(),
-            duration: 60,
-          })
-          document.querySelector('#{{conf.id}} .calendar').appendChild(myCalendar);
+          // var myCalendar = createCalendarFromObject({
+          //   id:  '{{conf.id}}',
+          //   title: '{{conf.title}} {{conf.year}} deadline',
+          //   date: confDate.toDate(),
+          //   duration: 60,
+          // })
+          // document.querySelector('#{{conf.id}} .calendar').appendChild(myCalendar);
 
           // check if date has passed, add 'past' class to it
           var today = moment();

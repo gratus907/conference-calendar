@@ -135,13 +135,16 @@ footer {
 .note {
   font-size: 13px;
   margin-bottom: 5px;
+  font-weight: 400;
 }
 
 .timer,
-.timer-small {
+.timer-small,
+.timer-vldb {
   font-size: 20px;
   font-weight: 400;
 }
+
 
 #confs {
   margin-top: 20px;

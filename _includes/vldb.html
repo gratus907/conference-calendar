@@ -2,10 +2,10 @@
     <div class="row conf-row">
         <div class="col-6">
           <span class="conf-title">
-              <a title="Deadline Details" href="/conference-calendar/conference?id=VLDB">VLDB Rolling Review</a>
+              <a title="Deadline Details" href="/conference-calendar/conference?id=VLDB">VLDB Rolling Submission</a>
           </span>
           <span class="conf-title-small">
-              <a title="Deadline Details" href="/conference-calendar/conference?id=VLDB">VLDB Rolling Review</a>
+              <a title="Deadline Details" href="/conference-calendar/conference?id=VLDB">VLDB Rolling Submission</a>
           </span>
           <span class="conf-title-icon">
             <a title="Conference Website" href="http://vldb.org/pvldb" target="_blank"><img src="/conference-calendar/static/img/203-earth.svg" class="badge-link" alt="Link to Conference Website"></a>
@@ -15,7 +15,7 @@
           </span>
         </div>
         <div class="col-6">
-          <span class="timer">1st of each month, 5:00 PM Pacific Time </span>
+          <span class="timer-vldb"></span>
           <span class="timer-small"></span>
         </div>
     </div>
@@ -34,8 +34,11 @@
       </div>
       <div class="col-12 col-sm-6">
         <div class="deadline">
+          <div>Deadline:
+            <span class="deadline-time"></span>
+          </div>
         </div>
-        <div class="calendar"></div>
+        <!-- <div class="calendar"></div> -->
       </div>
     </div>
     <div class="row">
@@ -52,3 +55,34 @@
     </div>
     <hr>
   </div>
+
+  <script>
+    {% include load_data.js %}
+    {% include utils.js %}
+    {% include multiselect_handler.js %}
+    addUtcTimeZones();
+    // Determine the user's or specified timezone
+    var timezone = {% if conf.timezone %}"{{conf.timezone}}" {% else %} "America/New_York" {% endif %};
+
+    // Calculate the 1st of next month at 5:00 PM Pacific Time
+    var nextMonthFirst = moment.tz("America/Los_Angeles").add(1, 'months').startOf('month').hour(16).minute(59).second(59);
+
+    // Convert the target time to the user's or specified timezone
+    var VLDBDate = nextMonthFirst.clone().tz(timezone);
+
+    $('#VLDB-rolling .timer-vldb').countdown(VLDBDate.toDate(), function (event) {
+        $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+    });
+    try {
+      var local_timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      $('.local-timezone').text(local_timezone.toString());
+    }
+    catch(err) {
+      $('.local-timezone-hide').hide();
+    }
+    var localConfDate = moment.tz(VLDBDate, local_timezone);
+    $('#VLDB-rolling .deadline-time').html(localConfDate.toString());
+
+    // // Update the countdown every second
+    // var timer = setInterval(updateCountdown, 1000);
+</script>

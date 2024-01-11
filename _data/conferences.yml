@@ -1,231 +1,134 @@
 ---
 
 - title: CIKM
-  year: 2022
-  id: CIKM22
-  link: https://www.cikm2022.org/
-  deadline: '2022-05-12 23:59:59'
+  year: 2024
+  id: CIKM24
+  link: https://www.cikm2024.org/
+  deadline: TBA
   timezone: UTC-12
-  place: Atlanta, Georgia, USA
-  date: October 17-22, 2022
-  start: 2022-10-17
-  end: 2022-10-22
+  place: Boise, Idaho
+  date: October 21-25, 2024
+  start: 2024-10-21
+  end: 2024-10-25
   CORE: A
   BK21: 3
   sub: DM
-
-- title: CPM
-  year: 2022
-  id: CPM22
-  link: https://www.stringology.org/event/CPM2022/
-  deadline: '2022-02-05 23:59:59'
-  timezone: UTC-12
-  place: Prague, Czech Republic
-  date: June 27-29, 2022
-  start: 2022-06-27
-  end: 2022-06-29
-  CORE: B
-  sub: AL
 
 - title: ECML-PKDD
-  year: 2023
-  id: ECMLPKDD23
-  link: https://2023.ecmlpkdd.org/
-  deadline: '2023-04-02 23:59:59'
+  year: 2024
+  id: ECMLPKDD24
+  link: https://2024.ecmlpkdd.org/
+  deadline: '2024-03-22 23:59:59'
   timezone: UTC-12
-  place: Turin, Italy
-  date: September 18-22, 2023
-  start: 2023-09-18
-  end: 2023-09-22
+  place: Vilnius, Lithuania
+  date: September 09-13, 2024
+  start: 2024-09-09
+  end: 2024-09-13
   CORE: A
   sub: DM
 
-- title: ICDE First Round
-  year: 2024
-  id: ICDE24-A
-  link: https://icde2024.github.io/index.html
-  deadline: '2023-07-28 23:59:59'
-  timezone: UTC-12
-  place: Utrechet, Netherlands
-  date: April 16-19, 2024
-  start: 2024-04-16
-  end: 2024-04-19
-  CORE: A*
-  SNU: True
-  BK21: 3
-  sub: DB
+# - title: ICDE Second Round
+#   year: 2024
+#   id: ICDE24-B
+#   link: https://icde2024.github.io/index.html
+#   deadline: '2023-11-24 23:59:59'
+#   timezone: UTC-12
+#   place: Utrechet, Netherlands
+#   date: April 16-19, 2024
+#   start: 2024-04-16
+#   end: 2024-04-19
+#   CORE: A*
+#   SNU: True
+#   BK21: 3
+#   sub: DB
 
 
 - title: ICDM
-  year: 2023
-  id: ICDM23
-  link: http://www.cloud-conf.net/icdm2023/index.html
-  deadline: '2023-06-01 23:59:59'
-  timezone: UTC+8
-  place: Shanghai, China
-  date: December 01 - December 04, 2023
-  start: 2023-12-01
-  end: 2023-12-04
-  CORE: A*
-  SNU: True
-  BK21: 4
-  sub: DM
-
-- title: ISAAC
-  year: 2023
-  id: ISAAC23
-  link: https://www.kurims.kyoto-u.ac.jp/isaac/isaac2023/
-  deadline: '2023-06-30 23:59:59'
-  timezone: UTC-12
-  place: Kyoto, Japan
-  date: December 3-6, 2022
-  start: 2023-12-03
-  end: 2023-12-06
-  CORE: A
-  BK21: 1
-  sub: AL
-
-- title: PAKDD
-  year: 2023
-  id: PAKDD23
-  link: http://pakdd2023.org/
-  deadline: '2022-11-24 23:59:59'
-  timezone: UTC-8
-  place: Osaka, Japan
-  date: May 25-28, 2023
-  start: 2022-05-25
-  end: 2022-05-28
-  CORE: A
-  BK21: 1
-  sub: DM
-
-- title: SDM
-  year: 2023
-  id: SDM23
-  link: https://www.siam.org/conferences/cm/conference/sdm23
-  deadline: '2022-10-07 23:59:59'
-  timezone: UTC-8
-  place: Minneapolis, Minnesota, USA
-  date: April 27-29, 2023
-  start: 2023-04-27
-  end: 2023-04-29
-  CORE: A
-  BK21: 2
-  sub: DM
-
-- title: SIGIR
-  year: 2023
-  id: SIGIR23
-  link: https://sigir.org/sigir2023/
-  deadline: '2023-01-31 23:59:59'
-  timezone: UTC-12
-  place: Taipei, Taiwan
-  date: July 23-27, 2023
-  start: 2023-07-23
-  end: 2023-07-27
-  CORE: A*
-  SNU: True
-  BK21: 4
-  sub: DM
-
-- title: SIGKDD
-  year: 2023
-  id: KDD23
-  link: https://kdd.org/kdd2023/
-  deadline: '2023-02-03 23:59:59'
-  timezone: UTC-12
-  place: Longbeach, CA, USA
-  date: August 06-10, 2022
-  start: 2023-08-06
-  end: 2023-08-10
-  CORE: A*
-  SNU: True
-  BK21: 4
-  sub: DM
-
-- title: SIGMOD Round 3
   year: 2024
-  id: SIGMOD24
-  link: http://2024.sigmod.org/
-  deadline: '2023-07-15 23:59:59'
-  timezone: UTC-8
-  place: Santiago, Chile
-  date: June 11-16, 2023
-  start: 2024-06-11
-  end: 2024-06-16
-  CORE: A*
-  BK21: 4
-  SNU: True
-  sub: DB
-
-- title: SIGMOD
-  year: 2024 (Decision)
-  id: SIGMOD24-Decision
-  link: http://2024.sigmod.org/
-  deadline: '2023-06-20 11:00:00'
-  timezone: UTC-8
-  place: Santiago, Chile
-  date: June 11-16, 2023
-  start: 2024-06-11
-  end: 2024-06-16
-  CORE: A*
-  BK21: 4
-  SNU: True
-  sub: DB
-  
-- title: SPIRE
-  year: 2023
-  id: SPIRE23
-  link: http://spire2023.isti.cnr.it/
-  deadline: '2023-06-02 23:59:59'
+  id: ICDM24
+  link: http://18.133.154.107/
+  deadline: '2024-07-01 23:59:59'
   timezone: UTC-12
-  place: Pisa, Italy
-  date: September 26-28, 2023
-  start: 2023-09-26
-  end: 2023-09-28
-  CORE: B
-  sub: AL
-
-- title: TheWebConf
-  year: 2023
-  id: WWW23
-  link: https://www2023.thewebconf.org/
-  deadline: '2022-10-13 23:59:59'
-  abstract_deadline: '2022-10-06 23:59:59'
-  timezone: UTC-12
-  place: Austin, Texas, USA
-  date: May 01-05, 2023
-  start: 2023-05-01
-  end: 2023-05-05
+  place: Abu Dhabi, UAE
+  date: December 09 - December 12, 2024
+  start: 2024-12-09
+  end: 2024-12-12
   CORE: A*
   SNU: True
   BK21: 4
   sub: DM
-  note: Abstract submission due October 6th
 
-- title: WALCOM
-  year: 2023
-  id: WALCOM23
-  link: https://www.walcom2023.conf.nycu.edu.tw/home
-  deadline: '2022-09-17 23:59:59'
+# - title: PAKDD
+#   year: 2024
+#   id: PAKDD23
+#   link: http://pakdd2023.org/
+#   deadline: '2023-11-24 23:59:59'
+#   timezone: UTC-8
+#   place: Taipei, Taiwan
+#   date: May 7-10, 2024
+#   start: 2024-05-07
+#   end: 2024-05-10
+#   CORE: A
+#   BK21: 1
+#   sub: DM
+
+- title: SIGMOD Round 2
+  year: 2025
+  id: SIGMOD25
+  link: http://2025.sigmod.org/
+  deadline: '2024-04-10 23:59:59'
   timezone: UTC-12
-  place: Hsinchu, Taiwan
-  date: March 22-24, 2023
-  start: 2023-03-22
-  end: 2023-03-24
-  CORE: B
-  sub: AL
+  place: Berlin, Germany
+  date: TBA
+  start: 2024-06-11
+  end: 2024-06-16
+  CORE: A*
+  BK21: 4
+  SNU: True
+  sub: DB
+
+# - title: TheWebConf
+#   year: 2023
+#   id: WWW23
+#   link: https://www2023.thewebconf.org/
+#   deadline: '2022-10-13 23:59:59'
+#   abstract_deadline: '2022-10-06 23:59:59'
+#   timezone: UTC-12
+#   place: Austin, Texas, USA
+#   date: May 01-05, 2023
+#   start: 2023-05-01
+#   end: 2023-05-05
+#   CORE: A*
+#   SNU: True
+#   BK21: 4
+#   sub: DM
+#   note: Abstract submission due October 6th
 
 - title: WSDM
-  year: 2024
-  id: WSDM24
-  link: https://www.wsdm-conference.org/2024/
-  deadline: '2023-08-10 23:59:59'
+  year: 2025
+  id: WSDM25
+  link: 
+  deadline: TBA
   timezone: UTC-12
-  place: Mérida, Mexico
-  date: March 04-08, 2024
-  start: 2023-03-04
-  end: 2023-03-08
+  place: Hanover, Germany
+  date: TBA
+  # start: 2023-03-04
+  # end: 2023-03-08
   CORE: A*
   BK21: 3
   sub: DM
+
+- title: VLDB (Revision, Jan 15)
+  year: 2024
+  id: VLDB24Jan
+  link: 
+  deadline: '2024-01-15 16:59:59'
+  timezone: America/Los_Angeles
+  place: Guangzhou, China
+  date: August 25 - August 29, 2024
+  start: 2024-08-25
+  end: 2024-08-29
+  CORE: A*
+  BK21: 4
+  sub: DB
+  decision: '2024-02-15 16:59:59'
