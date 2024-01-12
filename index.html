@@ -59,6 +59,8 @@
         </div>
         <div id="confs">
         <div id="coming_confs">
+
+          {% include vldb.html %}
           {% for conf in site.data.conferences %}
           <div id="{{conf.id}}" class="ConfItem {% for sub in conf.sub %} {{sub}}-conf {% endfor %}">
             <div class="row conf-row">
@@ -135,7 +137,6 @@
             <hr>
           </div>
           {% endfor %}
-          {% include vldb.html %}
         </div>
         <div id="past_confs">
           <h1 id="past-events-title">Past Events</h1>
